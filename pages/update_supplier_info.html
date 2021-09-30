@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>register_buyer</title>
+    <title>update_supplier_info</title>
   </head>
   <body>
     <main>
-      <h1>バイヤーユーザー登録</h1>
+      <h1>サプライヤーユーザー登録</h1>
       <form action="">
         <div class="entry_box name_box">
           <label for="name">お名前</label>
@@ -60,20 +60,31 @@
           <input type="password" name="repassword" id="repassword" />
         </div>
         <div class="entry_box text_box">
-          <label for="terms">利用規約</label>
-          <textarea name="terms" id="terms" cols="30" rows="10"></textarea>
+          <label for="business">事業内容</label>
+          <textarea
+            name="business"
+            id="business"
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
-        <div class="check_box">
-          <input type="checkbox" />
-          <p>利用規約に同意する</p>
+        <div class="entry_box date_box">
+          <label for="date">設立日</label>
+          <input type="date" name="date" id="date" />
         </div>
-        <div class="check_box">
-          <input type="checkbox" />
-          <p>
-            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
-          </p>
+        <div class="entry_box capital_box">
+          <label for="capital">資本金</label>
+          <input type="number" name="capital" id="capital" />
         </div>
-        <button class="button">送信</button>
+        <div class="entry_box representative_box">
+          <label for="representative">代表者名</label>
+          <input type="text" name="representative" id="representative" />
+        </div>
+        <div class="entry_box text_box">
+          <label for="purpose">登録目的</label>
+          <textarea name="purpose" id="purpose" cols="30" rows="10"></textarea>
+        </div>
+        <button class="button">更新</button>
       </form>
     </main>
   </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,15 +33,15 @@
         </div>
         <div class="entry_box phone_box">
           <label for="phone">電話番号</label>
-          <input type="text" name="phone" id="phone" />
+          <input type="tel" name="phone" id="phone" />
         </div>
         <div class="entry_box mail_box">
           <label for="mail">メールアドレス</label>
-          <input type="text" name="mail" id="mail" />
+          <input type="email" name="mail" id="mail" />
         </div>
         <div class="entry_box text_box">
           <label for="text">お問合せ内容</label>
-          <input type="text" name="text" id="text" />
+          <textarea name="text" id="text" cols="30" rows="10"></textarea>
         </div>
         <div class="file_box">
           <label for="file">添付ファイル</label>
@@ -54,7 +54,7 @@
             確認画面は表示されません。上記内容にて送信しますがよろしいですか？
           </p>
         </div>
-        <button>送信</button>
+        <button class="button">送信</button>
       </form>
     </main>
   </body>
