@@ -1,11 +1,8 @@
 body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
-body, p , div, ul{
+body, p , div, ul, main, h1, h2{
     margin: 0;
     font-family: "メイリオ";
 }
@@ -147,7 +144,6 @@ footer li span {
     justify-content: space-between;
     border: 1px solid #B3B3B3;
     border-radius: 5px;
-    padding: 0 10px 10px 10px;
 }
 
 .popup section:first-of-type {
@@ -156,25 +152,93 @@ footer li span {
     justify-content: center;
     width: 100%;
     text-align: center;
-    /* justify-content: center; */
+    align-items: center;
+
 }
 
 .popup button {
     color: white;
     background-color: #2300FF;
     border-radius: 5px;
+    border: none;
 }
 
-.popup_a {
+.popup i {
+    padding-right: 10px;
+    font-size: 32px;
+}
+
+.popup_question section:first-of-type, #search_stock_fail_popup section:first-of-type{
+    gap: 20px;
+}
+
+/* logout, import, export */
+.popup_question {
     width: 500px;
     height: 150px;
     font-size: 32px;
 }
 
-.popup_a button {
-    width: 150px;
-    height: 50px;
-    font-size: 24px;
+.popup_question div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.popup_question button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
     font-weight: bold;
-    border: none;
+}
+
+.popup_question button:last-of-type {
+    background-color: white;
+    border: 1px solid #2300FF;
+    color: #2300FF;
+}
+
+.popup_message {
+    width: 800px;
+    height: 50px;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.popup_message p {
+    width: 100%;
+}
+
+/********** registration **********/
+.popup_register {
+    width: 1000px;
+    height: 300px;
+}
+
+.popup_register section {
+    gap: 20px;
+}
+
+.popup_register p:first-of-type {
+    font-size: 32px;
+}
+
+.popup_register p:last-of-type {
+    font-size: 24px;
+}
+
+/********** search_stock **********/
+#search_stock_fail_popup {
+    width: 600px;
+    height: 200px;
+}
+
+#search_stock_fail_popup button {
+    width: 200px;
+    height: 50px;
+}
+
+#search_stock_fail_popup button i {
+    font-size: 16px;
 }

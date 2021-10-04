@@ -1,0 +1,21 @@
+main {
+    text-align: center;
+}
+
+main, div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2, button{
+    font-size: 24px;
+}
+
+p, label {
+    font-size: 20px;
+}
+
+input {
+    width: 700px;
+}
