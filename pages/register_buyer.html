@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register_buyer</title>
+  </head>
+  <body>
+    <main>
+      <h1>バイヤーユーザー登録</h1>
+      <form action="">
+        <div class="entry_box name_box">
+          <label for="name">お名前</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="entry_box furigana_box">
+          <label for="furigana">ふりがな</label>
+          <input type="text" name="furigana" id="furigana" />
+        </div>
+        <div class="entry_box company_box">
+          <label for="company">御社名</label>
+          <input type="text" name="company" id="company" />
+        </div>
+        <div class="entry_box postalcode_box">
+          <label for="postalcode">郵便番号</label>
+          <input
+            type="text"
+            name="postalcode"
+            id="postalcode"
+            pattern="\d{3}-?\d{4}"
+          />
+        </div>
+        <div class="entry_box address_box">
+          <label for="address">住所</label>
+          <input type="text" name="address" id="address" />
+        </div>
+        <div class="entry_box mail_box">
+          <label for="mail">メールアドレス</label>
+          <input type="email" name="mail" id="mail" />
+        </div>
+        <div class="entry_box phone_box">
+          <label for="phone">電話番号</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="entry_box fax_box">
+          <label for="fax">FAX番号</label>
+          <input type="tel" name="fax" id="fax" />
+        </div>
+        <div class="entry_box homepage_box">
+          <label for="homepage">ホームページ</label>
+          <input type="url" name="homepage" id="homepage" />
+        </div>
+        <div class="entry_box password_box">
+          <label for="password">パスワード</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="entry_box repassword_box">
+          <label for="repassword">パスワード再入力</label>
+          <input type="password" name="repassword" id="repassword" />
+        </div>
+        <div class="entry_box text_box">
+          <label for="terms">利用規約</label>
+          <textarea name="terms" id="terms" cols="30" rows="10"></textarea>
+        </div>
+        <div class="check_box">
+          <input type="checkbox" />
+          <p>利用規約に同意する</p>
+        </div>
+        <div class="check_box">
+          <input type="checkbox" />
+          <p>
+            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+          </p>
+        </div>
+        <button class="button">送信</button>
+      </form>
+    </main>
+  </body>
+</html>

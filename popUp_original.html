@@ -1,0 +1,99 @@
+<!-- 最後に消す -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/all.css" />
+    <link rel="stylesheet" href="./styles/common.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ログアウト -->
+    <div class="popup popup_a" id="logout_popup">
+      <section>
+        <p>ログアウトしますか？</p>
+        <div>
+          <button>OK</button>
+          <button>戻る</button>
+        </div>
+      </section>
+      <section>
+        <i class="fas fa-times"></i>
+      </section>
+    </div>
+
+    <!-- インポート -->
+    <div class="popup popup_a" id="import_popup">
+      <section>
+        <p>インポートしますか？</p>
+        <div>
+          <button>OK</button>
+          <button>戻る</button>
+        </div>
+      </section>
+      <section>
+        <i class="fas fa-times"></i>
+      </section>
+    </div>
+
+    <div class="popup" id="import_success_popup">
+      <p>インポートが成功しました。</p>
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- エクスポート -->
+    <div class="popup popup_a" id="export_popup">
+      <section>
+        <p>エクスポートしますか？</p>
+        <div>
+          <button>OK</button>
+          <button>戻る</button>
+        </div>
+      </section>
+      <section>
+        <i class="fas fa-times"></i>
+      </section>
+    </div>
+
+    <div class="popup" id="export_success_popup">
+      <p>エクスポートが成功しました。</p>
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- 在庫検索失敗 -->
+    <div class="popup" id="search_stock_fail_popup">
+      <section>
+        <p>
+          大変申し訳ありません。在庫品がありませんでした。当社のDEVICE事業で見積確認させて頂きますので部品見積依頼をお願いします。
+        </p>
+        <button>部品見積依頼へ　<i class="fas fa-search"></i></button>
+      </section>
+      <section>
+        <i class="fas fa-times"></i>
+      </section>
+    </div>
+
+    <!-- ユーザー仮登録完了 -->
+    <div class="popup" id="buyer_registration_success_popup">
+      <section>
+        <p>バイヤーユーザー仮登録完了</p>
+        <i class="fas fa-times"></i>
+      </section>
+      <p>
+        バイヤーユーザー登録情報が送信されました。審査を通過次第、メールアドレスに承認アドレスをお送りいたします。メールに記載されているURLをクリックして、本登録を完了させてください。
+      </p>
+    </div>
+
+    <div class="popup" id="supplier_registration_success_popup">
+      <section>
+        <p>サプライヤーユーザー仮登録完了</p>
+        <i class="fas fa-times"></i>
+      </section>
+      <p>
+        サプライヤーユーザー登録情報が送信されました。審査を通過次第、メールアドレスに承認アドレスをお送りいたします。メールに記載されているURLをクリックして、本登録を完了させてください。
+      </p>
+    </div>
+  </body>
+</html>
