@@ -1,0 +1,180 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body, p , div, ul{
+    margin: 0;
+    font-family: "メイリオ";
+}
+
+h1 {
+    font-size: 40px;
+    border-bottom: 3px solid #2300FF;
+}
+
+/********** header **********/
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.header_img img {
+    height: 120px;
+}
+
+.header_serch_bar div{
+    display: flex;
+    gap: 20px;
+}
+
+.header_serch_bar div p:first-of-type{
+    font-size: 32px;
+    color: #2300FF;
+}
+
+.header_serch_bar div p:last-of-type{
+    align-items: center;
+    font-size: 24px;
+    color: #2300FF;
+    display: flex;
+}
+
+.serch_bar {
+    border: 1px solid #2300FF;
+    border-radius: 5px;
+    display: flex;
+}
+
+.serch_bar input, .serch_bar button, .header_menu button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+}
+
+.serch_bar input {
+    width: 100%;
+    height: 50px;
+    outline: #2300FF;
+}
+
+.serch_bar button {
+    color: #2300FF;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header_menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header_menu button {
+    padding: 0;
+}
+
+.header_menu button span{
+    color: #2300FF;
+}
+
+.header_button {
+    width: 200px;
+    height: 50px;
+    background-color: #2300FF !important;
+    color: white;
+}
+
+/********** footer **********/
+footer {
+    border-top: 3px solid #2300FF;
+}
+
+.footer_menu {
+    border-bottom: 1px solid #B3B3B3;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer_menu p {
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid #2300FF;
+    margin-bottom: 10px;
+    color: #2300FF;
+}
+
+footer ul {
+    padding-left: 25px;
+    list-style-type: square;
+}
+
+footer li {
+    margin-top: 5px;
+    color: #2300FF;
+}
+
+footer li span {
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.copyright p:last-of-type {
+    color: #B3B3B3;
+}
+
+/********** popUp **********/
+.popup {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    padding: 0 10px 10px 10px;
+}
+
+.popup section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.popup button {
+    color: white;
+    background-color: #2300FF;
+    border-radius: 5px;
+}
+
+.popup_a {
+    width: 500px;
+    height: 150px;
+    font-size: 32px;
+}
+
+.popup_a button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+}
