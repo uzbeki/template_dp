@@ -1,0 +1,9 @@
+#owner-table {
+    margin: 10px auto;
+}
+#owner-table th {
+    padding-right: 12px;
+}
+#owner-table tr {
+    margin: 10px 0;
+}
