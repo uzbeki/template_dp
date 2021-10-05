@@ -1,6 +1,18 @@
-#search-stock-table table {
-    border: 0;
+.table-top {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-#search-stock-table table th{
- background-color: #2300ff;
+#search-stock-table {
+  border: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: none;
+  color: #ffffff;
+  border-collapse:collapse;
+
+}
+#search-stock-table th {
+  background-color: #2300ff;
+  padding: 5px 15px;
 }
