@@ -1,244 +1,340 @@
 body {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
 }
 
-body, p , div, ul, main, h1, h2{
-    margin: 0;
-    font-family: "メイリオ";
+body,
+p,
+div,
+ul,
+main,
+h1,
+h2 {
+  margin: 0;
+  font-family: "メイリオ";
 }
 
 h1 {
-    font-size: 40px;
-    border-bottom: 3px solid #2300FF;
+  font-size: 40px;
+  border-bottom: 3px solid #2300ff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
 }
 
 /********** header **********/
 header {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
 }
 
 .header_img img {
-    height: 120px;
+  height: 120px;
 }
 
-.header_serch_bar div{
-    display: flex;
-    gap: 20px;
+.header_serch_bar div {
+  display: flex;
+  gap: 20px;
 }
 
-.header_serch_bar div p:first-of-type{
-    font-size: 32px;
-    color: #2300FF;
+.header_serch_bar div p:first-of-type {
+  font-size: 32px;
+  color: #2300ff;
 }
 
-.header_serch_bar div p:last-of-type{
-    align-items: center;
-    font-size: 24px;
-    color: #2300FF;
-    display: flex;
+.header_serch_bar div p:last-of-type {
+  align-items: center;
+  font-size: 24px;
+  color: #2300ff;
+  display: flex;
 }
 
 .serch_bar {
-    border: 1px solid #2300FF;
-    border-radius: 5px;
-    display: flex;
+  border: 1px solid #2300ff;
+  border-radius: 5px;
+  display: flex;
 }
 
-.serch_bar input, .serch_bar button, .header_menu button {
-    border: none;
-    background-color: white;
-    font-size: 20px;
-    padding: 0 20px 0 20px;
-    border-radius: 5px;
+.serch_bar input,
+.serch_bar button,
+.header_menu button {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+  border-radius: 5px;
 }
 
 .serch_bar input {
-    width: 100%;
-    height: 50px;
-    outline: #2300FF;
+  width: 100%;
+  height: 50px;
+  outline: #2300ff;
 }
 
 .serch_bar button {
-    color: #2300FF;
+  color: #2300ff;
 }
 
 .header_menu {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .header_menu nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .header_menu button {
-    padding: 0;
+  padding: 0;
 }
 
-.header_menu button span{
-    color: #2300FF;
+.header_menu button span {
+  color: #2300ff;
 }
 
 .header_button {
-    width: 200px;
-    height: 50px;
-    background-color: #2300FF !important;
-    color: white;
+  width: 200px;
+  height: 50px;
+  background-color: #2300ff !important;
+  color: white;
 }
 
 /********** footer **********/
 footer {
-    border-top: 3px solid #2300FF;
+  border-top: 3px solid #2300ff;
 }
 
 .footer_menu {
-    border-bottom: 1px solid #B3B3B3;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    padding-top: 3rem;
-    padding-bottom: 1.5rem;
+  border-bottom: 1px solid #b3b3b3;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .footer_menu p {
-    font-weight: bold;
-    width: 100%;
-    border-bottom: 1px solid #2300FF;
-    margin-bottom: 10px;
-    color: #2300FF;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid #2300ff;
+  margin-bottom: 10px;
+  color: #2300ff;
 }
 
 footer ul {
-    padding-left: 25px;
-    list-style-type: square;
+  padding-left: 25px;
+  list-style-type: square;
 }
 
 footer li {
-    margin-top: 5px;
-    color: #2300FF;
+  margin-top: 5px;
+  color: #2300ff;
 }
 
 footer li span {
-    color: black;
+  color: black;
 }
 
 .copyright {
-    text-align: center;
-    padding-top: 10px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .copyright p:last-of-type {
-    color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 /********** popUp **********/
 .popup {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #B3B3B3;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
 }
 
 .popup section:first-of-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 .popup button {
-    color: white;
-    background-color: #2300FF;
-    border-radius: 5px;
-    border: none;
+  color: white;
+  background-color: #2300ff;
+  border-radius: 5px;
+  border: none;
 }
 
 .popup i {
-    padding-right: 10px;
-    font-size: 32px;
+  padding-right: 10px;
+  font-size: 32px;
 }
 
-.popup_question section:first-of-type, #search_stock_fail_popup section:first-of-type{
-    gap: 20px;
+.popup_question section:first-of-type,
+#search_stock_fail_popup section:first-of-type {
+  gap: 20px;
 }
 
 /* logout, import, export */
 .popup_question {
-    width: 500px;
-    height: 150px;
-    font-size: 32px;
+  width: 500px;
+  height: 150px;
+  font-size: 32px;
 }
 
 .popup_question div {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .popup_question button {
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: bold;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .popup_question button:last-of-type {
-    background-color: white;
-    border: 1px solid #2300FF;
-    color: #2300FF;
+  background-color: white;
+  border: 1px solid #2300ff;
+  color: #2300ff;
 }
 
 .popup_message {
-    width: 800px;
-    height: 50px;
-    font-size: 32px;
-    align-items: center;
-    text-align: center;
+  width: 800px;
+  height: 50px;
+  font-size: 32px;
+  align-items: center;
+  text-align: center;
 }
 
 .popup_message p {
-    width: 100%;
+  width: 100%;
 }
 
 /********** registration **********/
 .popup_register {
-    width: 1000px;
-    height: 300px;
+  width: 1000px;
+  height: 300px;
 }
 
 .popup_register section {
-    gap: 20px;
+  gap: 20px;
 }
 
 .popup_register p:first-of-type {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .popup_register p:last-of-type {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 /********** search_stock **********/
 #search_stock_fail_popup {
-    width: 600px;
-    height: 200px;
+  width: 600px;
+  height: 200px;
 }
 
 #search_stock_fail_popup button {
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 }
 
 #search_stock_fail_popup button i {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+/********** forms **********/
+.page_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.page_info {
+  display: flex;
+  justify-content: center;
+}
+
+.entry_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+
+.form_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 1000px;
+}
+
+.entry_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1000px;
+}
+
+.entry_box label {
+  text-align: left;
+}
+
+.entry_box input,
+.entry_box textarea {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.entry_box input {
+  height: 50px;
+}
+
+.entry_box textarea {
+  height: 300px;
+}
+
+.check_box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.check_box input {
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  width: 900px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #2300ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }

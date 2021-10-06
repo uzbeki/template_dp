@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
     <title>register_supplier</title>
   </head>
   <body>
     <main>
-      <h1>サプライヤーユーザー登録</h1>
-      <form action="">
+      <section class="page_title">
+        <h1>サプライヤーユーザー登録</h1>
+      </section>
+      <form action="" class="entry_form">
         <div class="entry_box name_box">
           <label for="name">お名前</label>
           <input type="text" name="name" id="name" />
@@ -88,27 +92,29 @@
           <label for="terms">利用規約</label>
           <textarea name="terms" id="terms" cols="30" rows="10"></textarea>
         </div>
-        <div class="check_box">
-          <input type="checkbox" />
-          <p>利用規約に同意する</p>
-        </div>
-        <div class="check_box">
-          <input type="checkbox" />
+        <section class="form_info">
+          <div class="check_box">
+            <input type="checkbox" />
+            <p>利用規約に同意する</p>
+          </div>
+          <div class="check_box">
+            <input type="checkbox" />
+            <p>
+              確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+            </p>
+          </div>
+          <div class="check_box">
+            <input type="checkbox" />
+            <p>
+              DEVICE PARTNER　- SEARCH SERVICE PLATFORM
+              -のサイト品質向上のため､在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。
+            </p>
+          </div>
           <p>
-            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+            ※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。
           </p>
-        </div>
-        <div class="check_box">
-          <input type="checkbox" />
-          <p>
-            DEVICE PARTNER　- SEARCH SERVICE PLATFORM
-            -のサイト品質向上のため､在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。
-          </p>
-        </div>
-        <p>
-          ※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。
-        </p>
-        <button class="button">送信</button>
+          <section><button class="button">送信</button></section>
+        </section>
       </form>
     </main>
   </body>

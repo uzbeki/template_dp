@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
     <title>contact</title>
   </head>
   <body>
     <main>
-      <h1>お問い合わせ</h1>
-      <section>
-        <p><i class="fas fa-phone-alt"></i>　049-214-5194</p>
-        <p>
-          <i class="fas fa-globe"></i>　
-          <a href="https://www.devicepartners.co.jp"
-            >https://www.devicepartners.co.jp</a
-          >
-        </p>
+      <section class="page_title">
+        <h1>お問い合わせ</h1>
+        <section class="page_info">
+          <p><i class="fas fa-phone-alt"></i>　049-214-5194</p>
+          <p>
+            <i class="fas fa-globe"></i>
+            <a href="https://www.devicepartners.co.jp"
+              >https://www.devicepartners.co.jp</a
+            >
+          </p>
+        </section>
       </section>
-      <form action="">
+      <form action="" class="entry_form">
         <div class="entry_box name_box">
           <label for="name">お名前</label>
           <input type="text" name="name" id="name" />
@@ -44,18 +48,22 @@
           <label for="text">お問合せ内容</label>
           <textarea name="text" id="text" cols="30" rows="10"></textarea>
         </div>
-        <div class="file_box">
-          <label for="file">添付ファイル</label>
-          <button type="button" name="file" id="file">ファイルを選択</button>
-          <p class="file_name">選択されていません</p>
-        </div>
-        <div class="check_box">
-          <input type="checkbox" />
-          <p>
-            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
-          </p>
-        </div>
-        <button class="button">送信</button>
+        <section class="form_info">
+          <div class="file_box">
+            <label for="file">添付ファイル</label>
+            <section>
+              <button>ファイルを選択</button>
+              <p class="file_name">選択されていません</p>
+            </section>
+          </div>
+          <div class="check_box">
+            <input type="checkbox" />
+            <p>
+              確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+            </p>
+          </div>
+          <section><button class="button">送信</button></section>
+        </section>
       </form>
     </main>
   </body>
