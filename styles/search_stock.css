@@ -9,8 +9,10 @@
   margin-top: 15px;
   border: none;
   color: #ffffff;
-  border-collapse:collapse;
-
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 5px;
 }
 #search-stock-table th {
   background-color: #2300ff;
