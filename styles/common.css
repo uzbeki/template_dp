@@ -115,6 +115,12 @@ header {
   color: white;
 }
 
+@media(max-width: 1600px) {
+  .header_serch_bar div p:first-of-type {
+    font-size: 24px;
+  }
+}
+
 /********** footer **********/
 footer {
   border-top: 3px solid #2300ff;
