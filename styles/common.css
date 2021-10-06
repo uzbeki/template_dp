@@ -20,6 +20,9 @@ h2 {
 h1 {
   font-size: 40px;
   border-bottom: 3px solid #2300ff;
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 main {

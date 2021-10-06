@@ -1,6 +1,24 @@
-#search-stock-table table {
-    border: 0;
+.table-top {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 50px;
 }
-#search-stock-table table th{
- background-color: #2300ff;
+#search-stock-table {
+  border: 0;
+  margin: 20px auto;
+  border: none;
+  color: #ffffff;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#search-stock-table th {
+  background-color: #2300ff;
+  padding: 5px 15px;
+}
+.fa-caret-left,
+.fa-caret-right {
+  color: #2300ff;
 }
