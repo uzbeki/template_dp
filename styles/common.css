@@ -10,6 +10,9 @@ body, p , div, ul, main, h1, h2{
 h1 {
     font-size: 40px;
     border-bottom: 3px solid #2300FF;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /********** header **********/
