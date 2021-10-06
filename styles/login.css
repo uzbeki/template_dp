@@ -1,21 +1,39 @@
 main {
-    text-align: center;
+  font-weight: bold;
 }
 
-main, div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.page_info button {
+  width: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  color: #c0c0c0;
 }
 
-h2, button{
-    font-size: 24px;
+.selected {
+  color: #2300ff !important;
 }
 
-p, label {
-    font-size: 20px;
+.entry_box {
+  width: 700px;
 }
 
-input {
-    width: 700px;
+.form_info {
+  width: 700px;
+}
+
+.entry_box input {
+  border: none;
+  border-bottom: 1px solid #707070;
+  border-radius: 0;
+}
+
+.button {
+  width: 700px;
+}
+
+.form_info section {
+  display: flex;
+  justify-content: space-between;
 }
