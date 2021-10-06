@@ -118,6 +118,7 @@ header {
 /********** footer **********/
 footer {
   border-top: 3px solid #2300ff;
+  text-align: left;
 }
 
 .footer_menu {
