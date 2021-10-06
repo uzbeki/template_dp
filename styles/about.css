@@ -1,14 +1,11 @@
 #about-content {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 20px 35px;
 }
 #about-content p {
     width: 50%;
 }
 #about-content img {
     width: 500px;
-}
-main {
-    height: 100%;
 }
