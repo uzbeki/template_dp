@@ -29,13 +29,13 @@ p {
   font-size: 24px;
 }
 
-section i {
+form section i {
   font-size: 10rem;
   background-color: #f7f7f7;
   color: #2300ff;
 }
 
-div {
+main div {
   display: flex;
   justify-content: center;
 }
