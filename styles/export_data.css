@@ -1,0 +1,36 @@
+.table-top {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 50px;
+}
+#export-table {
+  border: 0;
+  margin: 20px auto;
+  border: none;
+  color: #ffffff;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#export-table th {
+  background-color: #2300ff;
+  padding: 5px 15px;
+}
+.fa-caret-left,
+.fa-caret-right {
+  color: #2300ff;
+}
+
+.table-bottom {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#export-button {
+  padding: 5px 45px;
+  color: #ffffff;
+  background-color: #2300ff;
+  border: none;
+  border-radius: 5px;
+}

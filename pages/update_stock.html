@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>在庫部品登録</title>
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/all.css">
+    <link rel="stylesheet" href="../styles/update_stock.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div>10件中1-10件目</div>
             <div><i class="fas fa-caret-left"></i>前ページ　1・2・3　後ページ<i class="fas fa-caret-right"></i></div>
         </div>
-        <table>
+        <table id="update-stock-table">
             <tr>
                 <th>No.</th>
                 <th>メーカー</th>
@@ -35,10 +36,13 @@
                 <th>備考</th>
             </tr>
         </table>
-        <div class="table-bottom"></div>
-            <button type="button">登録・更新</button>
-            <a href="import_data.html"><i class="fas fa-square-full"></i>インポート</a>
-            <a href="export_data.html"><i class="fas fa-square-full"></i>エクスポート</a>
+        <div class="table-bottom">
+            <button type="button" id="update-button">登録・更新</button>
+            <div id="link-part">
+                <a href="import.html"><i class="fas fa-square-full"></i> インポート</a>
+                <a href="export_data.html"><i class="fas fa-square-full"></i> エクスポート</a>
+            </div>
+        </div>
     </main>
     <footer></footer>
 </body>
