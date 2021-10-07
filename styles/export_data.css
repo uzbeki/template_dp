@@ -13,10 +13,7 @@
   border-collapse: separate;
   overflow: hidden;
 }
-#export-table th {
-  background-color: #2300ff;
-  padding: 5px 15px;
-}
+
 #export-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
