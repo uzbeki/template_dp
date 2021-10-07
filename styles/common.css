@@ -115,9 +115,43 @@ header {
   color: white;
 }
 
-@media(max-width: 1600px) {
+@media (max-width: 1800px) {
   .header_serch_bar div p:first-of-type {
     font-size: 24px;
+  }
+
+  .header_serch_bar div p:last-of-type {
+    font-size: 16px;
+  }
+
+  .header_menu button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  header {
+    gap: 20px;
+  }
+
+  .header_serch_bar div p:first-of-type {
+    font-size: 16px;
+  }
+
+  .header_serch_bar div p:last-of-type {
+    display: none;
+  }
+
+  .header_menu button {
+    font-size: 16px;
+  }
+
+  .header_img img {
+    display: none;
+  }
+
+  .header_menu {
+    gap: 20px;
   }
 }
 
@@ -165,6 +199,12 @@ footer li span {
 
 .copyright p:last-of-type {
   color: #b3b3b3;
+}
+
+@media (max-width:1200px) {
+  .footer_menu {
+    gap: 50px;
+  }
 }
 
 /********** popUp **********/
