@@ -1,11 +1,12 @@
-/* main {
+main {
     margin: 0 12%;
-} */
+}
 
 .privacy-policy-text {
   display: flex;
   text-align: center;
   flex-direction: column;
+  margin: 0 15%;
 }
 .privacy-policy-text p {
   font-size: 1rem;
