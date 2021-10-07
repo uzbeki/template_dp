@@ -26,7 +26,8 @@
 
 #search-stock-table th {
   background-color: #2300ff;
-  padding: 5px 15px;
+  padding: 5px 40px;
+  color: #ffffff;
 }
 .fa-caret-left,
 .fa-caret-right {

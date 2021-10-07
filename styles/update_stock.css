@@ -12,7 +12,6 @@
   border-spacing: 0;
   border-collapse: separate;
   overflow: hidden;
-  border-radius: 5px;
 }
 #update-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
@@ -26,7 +25,8 @@
 }
 #update-stock-table th {
   background-color: #2300ff;
-  padding: 5px 15px;
+  padding: 5px 40px;
+  color: #ffffff;
 }
 .fa-caret-left,
 .fa-caret-right {
