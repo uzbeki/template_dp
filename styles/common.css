@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  gap: 50px;
 }
 
 body,
@@ -378,6 +379,10 @@ footer li span {
   height: 20px;
 }
 
+.check_box label {
+  text-align: left;
+}
+
 .button {
   width: 900px;
   height: 60px;
@@ -387,4 +392,18 @@ footer li span {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+@media (max-width:1200px) {
+  .form_info {
+    width: 700px;
+  }
+
+  .entry_box {
+    width: 700px;
+  }
+
+  .button {
+    width: 500px;
+  }
 }
