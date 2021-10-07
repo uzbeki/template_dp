@@ -12,12 +12,26 @@
   border-spacing: 0;
   border-collapse: separate;
   overflow: hidden;
-  border-radius: 5px;
 }
 #export-table th {
   background-color: #2300ff;
   padding: 5px 15px;
 }
+#export-table tr:nth-child(2n) {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 15px;
+}
+#export-table tr:nth-child(2n + 1) {
+  background-color: #e6e6e6;
+  color: #000000;
+  padding: 5px 15px;
+}
+#export-table th {
+  background-color: #2300ff;
+  padding: 5px 15px;
+}
+
 .fa-caret-left,
 .fa-caret-right {
   color: #2300ff;
