@@ -1,6 +1,9 @@
 main {
   margin: 0 12%;
 }
+body {
+  margin-top: 50px;
+}
 
 .privacy-policy-text {
   display: flex;
@@ -43,6 +46,7 @@ main {
 }
 #privacy-policy-box {
   margin: 0 12%;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   text-align: right;
