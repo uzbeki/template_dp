@@ -1,11 +1,15 @@
-/* main {
-    margin: 0 12%;
-} */
+main {
+  margin: 0 12%;
+}
+body {
+  margin-top: 50px;
+}
 
 .privacy-policy-text {
   display: flex;
   text-align: center;
   flex-direction: column;
+  margin: 0 15%;
 }
 .privacy-policy-text p {
   font-size: 1rem;
@@ -31,7 +35,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
   margin: 12px 0 8px 0;
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .privacy-policy-text h4 {
   margin: 0;
@@ -41,9 +45,12 @@
   font-size: 1rem;
 }
 #privacy-policy-box {
+  margin: 0 12%;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   text-align: right;
+  align-items: flex-end;
 }
 #privacy-policy-box p {
   margin: 0;

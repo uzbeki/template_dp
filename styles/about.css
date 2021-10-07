@@ -1,11 +1,16 @@
+main {
+  margin: 0 15%;
+}
 #about-content {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 35px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 35px;
 }
 #about-content p {
-    width: 50%;
+  width: 50%;
+  margin: 5px 80px;
+  line-height: 2em;
 }
 #about-content img {
-    width: 500px;
+  width: 500px;
 }
