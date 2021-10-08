@@ -6,27 +6,92 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>TOP</title>
+	<link rel="stylesheet" href="styles/common.css">
 	<link rel="stylesheet" href="styles/top.css" />
+	<link rel="stylesheet" href="styles/all.css">
 </head>
 
 <body>
 	<header>
+		<section class="header_menu">
+			<nav>
+				<button>
+					MENU <span><i class="fas fa-chevron-down"></i></span>
+				</button>
+				<button>
+					GUIDE <span><i class="fas fa-chevron-down"></i></span>
+				</button>
+				<button>
+					TERMS <span><i class="fas fa-chevron-down"></i></span>
+				</button>
+				<button>
+					OTHERS <span><i class="fas fa-chevron-down"></i></span>
+				</button>
+			</nav>
+			<button class="header_button">
+				ログイン <i class="fas fa-sign-in-alt"></i>
+			</button>
+		</section>
+	</header>
+	<main>
 		<div id="top-content">
 			<img src="./assets/logo.png" alt="DEVICE PARTNERSロゴ" id="top-left">
 			<div id="top-center">
 				<h2>DEVICE PARTNERS - Search Service Platform -</h2>
-				<input type="search" placeholder="在庫検索 例:TLP281">
-				<div id="top-paragraph">
-					<p>電子部品半導体部品の流通在庫品になります。お気軽に在庫検索してください。</p>
-					<p>型番又は一部､キーワードを入力してください。</p>
-					<p>英数字は半角でご入力お願いします。</p>
+				<input type="search" placeholder="在庫検索 例:TLP281" class="search-form">
+				<div id="top-paragraph-box">
+					<div id="top-paragraph">
+						<p>電子部品半導体部品の流通在庫品になります。お気軽に在庫検索してください。</p>
+						<p>型番又は一部､キーワードを入力してください。</p>
+						<p>英数字は半角でご入力お願いします。</p>
+					</div>
 				</div>
 			</div>
 			<!-- 画像待ち -->
 			<img src="" alt="" id="top-right">
 		</div>
-	</header>
-	<footer></footer>
+	</main>
+	<footer>
+		<section class="footer_menu">
+			<section>
+				<p>MENU</p>
+				<ul class="footer_list menu">
+					<li><span>ログイン</span></li>
+					<li><span>ユーザー情報編集</span></li>
+					<li><span>バイヤーユーザー登録</span></li>
+					<li><span>サプライヤーユーザー登録</span></li>
+				</ul>
+			</section>
+			<section>
+				<p>GUIDE</p>
+				<ul class="footer_list guide">
+					<li><span>DEVICE PARTNERSについて</span></li>
+					<li><span>ご利用ガイド</span></li>
+				</ul>
+			</section>
+			<section>
+				<p>TERMS</p>
+				<ul class="footer_list terms">
+					<li><span>ご利用規約</span></li>
+					<li><span>プライバシーポリシー</span></li>
+				</ul>
+			</section>
+			<section>
+				<p>OTHERS</p>
+				<ul class="footer_list others">
+					<li><span>お問合せ</span></li>
+					<li><span>運営会社</span></li>
+					<li><span>退会</span></li>
+				</ul>
+			</section>
+		</section>
+		<section class="copyright">
+			<p>Copyright © DEVICE PARTNERS CO., LTD. All Rights Reserved.</p>
+			<p>Made with love by ASTERONE CO., LTD.</p>
+		</section>
+	</footer>
+
+	</footer>
 </body>
 
 </html>
