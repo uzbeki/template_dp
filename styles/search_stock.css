@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+.sort-titel {
+  text-align: left;
 }
 #search-stock-table {
   border: 0;

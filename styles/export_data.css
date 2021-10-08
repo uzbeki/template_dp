@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+.sort-titel {
+  text-align: left;
 }
 #export-table {
   border: 0;
@@ -40,6 +44,7 @@
   margin-bottom: 40px;
 }
 #export-button {
+  width: 30%;
   padding: 5px 45px;
   color: #ffffff;
   background-color: #2300ff;
