@@ -1,8 +1,12 @@
+main,
+body {
+  display: block;
+}
 .table-top {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   align-items: center;
 }
 .sort-titel {
@@ -17,6 +21,9 @@
   border-collapse: separate;
   overflow: hidden;
 }
+table {
+  max-width: 800px;
+}
 #update-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
@@ -29,7 +36,7 @@
 }
 #update-stock-table th {
   background-color: #2300ff;
-  padding: 5px 40px;
+  padding: 5px 30px;
   color: #ffffff;
 }
 .fa-caret-left,
