@@ -12,6 +12,13 @@ body {
 .sort-titel {
   text-align: left;
 }
+.page-control,
+.sort-list,
+#update-button,
+#import-link,
+#export-link {
+  cursor: pointer;
+}
 #update-stock-table {
   border: 0;
   margin: 20px auto;

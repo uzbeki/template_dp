@@ -12,6 +12,10 @@ body {
 .sort-titel {
   text-align: left;
 }
+.page-control,
+.sort-list {
+  cursor: pointer;
+}
 table {
   max-width: 800px;
 }
