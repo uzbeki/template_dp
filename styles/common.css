@@ -79,12 +79,12 @@ header .header_menu button {
 	border: none;
 	background-color: white;
 	font-size: 20px;
-  padding: 10px 20px;
+	padding: 10px 20px;
 	border-radius: var(--border-radius);
 }
 
 header .search_bar input {
-  padding-right: 5px;
+	padding-right: 5px;
 	width: 100%;
 	/* height: 50px; */
 	outline: var(--primary-color);
@@ -92,7 +92,7 @@ header .search_bar input {
 
 header .search_bar button {
 	color: var(--primary-color);
-  padding-left: 5px;
+	padding-left: 5px;
 }
 header .header_menu {
 	display: flex;
@@ -181,6 +181,7 @@ footer {
 footer a {
 	text-decoration: none;
 	color: inherit;
+  cursor: pointer;
 }
 
 footer ul {
@@ -195,10 +196,6 @@ footer li::marker {
 footer li {
 	margin-top: 5px;
 	font-size: small;
-}
-
-footer li span {
-	color: black;
 }
 
 .copyright {
