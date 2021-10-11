@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,11 +167,12 @@ footer {
 
 .footer_menu {
   border-bottom: 1px solid #b3b3b3;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 200px));
+  gap: 40px 100px;
+  align-content: center;
   justify-content: center;
-  gap: 100px;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
+  padding: 3rem 1rem 1.5rem 1rem;
 }
 
 .footer_menu p {
@@ -182,14 +183,23 @@ footer {
   color: #2300ff;
 }
 
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
 footer ul {
-  padding-left: 25px;
+  padding-left: 1em;
   list-style-type: square;
+}
+
+footer li::marker {
+  color: #2300ff;
 }
 
 footer li {
   margin-top: 5px;
-  color: #2300ff;
+  font-size: small;
 }
 
 footer li a {
@@ -209,7 +219,12 @@ footer li a {
 
 @media (max-width:1200px) {
   .footer_menu {
-    gap: 50px;
+    gap: 20px 40px;
+  }
+}
+@media (max-width:510px) {
+  footer .copyright {
+    font-size: small;
   }
 }
 

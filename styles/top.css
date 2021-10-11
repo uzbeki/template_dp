@@ -2,9 +2,13 @@
   display: flex;
   align-items: center;
 }
-}
 #top-content img {
   width: 20%;
+}
+#top-right {
+  height: 35%;
+  width: auto;
+  position: left;
 }
 #top-content h2 {
   color: #2300ff;
