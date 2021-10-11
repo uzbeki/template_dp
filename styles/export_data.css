@@ -12,6 +12,11 @@ body {
 .sort-titel {
   text-align: left;
 }
+.sort-list,
+.page-control,
+#export-button {
+  cursor: pointer;
+}
 #export-table {
   border: 0;
   margin: 20px auto;
