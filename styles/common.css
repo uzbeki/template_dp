@@ -192,7 +192,8 @@ footer li {
   color: #2300ff;
 }
 
-footer li span {
+footer li a {
+  text-decoration: none;
   color: black;
 }
 
@@ -201,8 +202,9 @@ footer li span {
   padding-top: 10px;
 }
 
-.copyright p:last-of-type {
+.copyright p:last-of-type a{
   color: #b3b3b3;
+  text-decoration: none;
 }
 
 @media (max-width:1200px) {
