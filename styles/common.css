@@ -1,9 +1,12 @@
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+
+	--border-radius: 5px;
+	--primary-color: #2300ff;
 }
 
 body,
@@ -13,414 +16,406 @@ ul,
 main,
 h1,
 h2 {
-  margin: 0;
-  font-family: "メイリオ";
+	margin: 0;
+	font-family: "メイリオ";
 }
 
 h1 {
-  font-size: 40px;
-  border-bottom: 3px solid #2300ff;
-  width: 900px;
-  text-align: center;
-  margin: 20px auto;
+	font-size: 40px;
+	border-bottom: 3px solid var(--primary-color);
+	width: 900px;
+	text-align: center;
+	margin: 20px auto;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 /********** header **********/
 header {
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  align-items: center;
+	--header-height: 100px;
+	width: 100%;
+	height: var(--header-height);
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 1rem;
+	align-items: center;
 }
-
+header .search_area {
+	display: flex;
+	align-items: center;
+}
 .header_img img {
-  height: 120px;
+	height: var(--header-height);
+}
+header .header_search_bar div {
+	display: flex;
+	gap: 10px;
+}
+header .header_search_bar div p:first-of-type {
+	font-size: 32px;
+	color: var(--primary-color);
+}
+header .header_search_bar div p:last-of-type {
+	align-items: center;
+	font-size: 24px;
+	color: var(--primary-color);
+	display: flex;
 }
 
-.header_serch_bar div {
-  display: flex;
-  gap: 20px;
+header .search_bar {
+	border: 1px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	display: flex;
 }
 
-.header_serch_bar div p:first-of-type {
-  font-size: 32px;
-  color: #2300ff;
+header .search_bar input,
+header .search_bar button,
+header .header_menu button {
+	border: none;
+	background-color: white;
+	font-size: 20px;
+  padding: 10px 20px;
+	border-radius: var(--border-radius);
 }
 
-.header_serch_bar div p:last-of-type {
-  align-items: center;
-  font-size: 24px;
-  color: #2300ff;
-  display: flex;
+header .search_bar input {
+  padding-right: 5px;
+	width: 100%;
+	/* height: 50px; */
+	outline: var(--primary-color);
 }
 
-.serch_bar {
-  border: 1px solid #2300ff;
-  border-radius: 5px;
-  display: flex;
+header .search_bar button {
+	color: var(--primary-color);
+  padding-left: 5px;
+}
+header .header_menu {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+header .header_menu nav {
+	display: flex;
+	gap: 30px;
+}
+header .header_menu button {
+	padding: 0;
+}
+header .header_menu button span {
+	color: var(--primary-color);
 }
 
-.serch_bar input,
-.serch_bar button,
-.header_menu button {
-  border: none;
-  background-color: white;
-  font-size: 20px;
-  padding: 0 20px 0 20px;
-  border-radius: 5px;
-}
-
-.serch_bar input {
-  width: 100%;
-  height: 50px;
-  outline: #2300ff;
-}
-
-.serch_bar button {
-  color: #2300ff;
-}
-
-.header_menu {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.header_menu nav {
-  display: flex;
-  gap: 30px;
-}
-
-.header_menu button {
-  padding: 0;
-}
-
-.header_menu button span {
-  color: #2300ff;
-}
-
-.header_button {
-  width: 200px;
-  height: 50px;
-  background-color: #2300ff !important;
-  color: white;
+header button.header_button {
+	width: 200px;
+	height: 50px;
+	background-color: var(--primary-color);
+	color: white;
 }
 
 @media (max-width: 1800px) {
-  .header_serch_bar div p:first-of-type {
-    font-size: 24px;
-  }
-
-  .header_serch_bar div p:last-of-type {
-    font-size: 16px;
-  }
-
-  .header_menu button {
-    font-size: 16px;
-  }
+	header .header_search_bar div p:first-of-type {
+		font-size: 24px;
+	}
+	header .header_search_bar div p:last-of-type {
+		font-size: 16px;
+	}
+	header .header_menu button {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 1400px) {
-  header {
-    gap: 20px;
-  }
-
-  .header_serch_bar div p:first-of-type {
-    font-size: 16px;
-  }
-
-  .header_serch_bar div p:last-of-type {
-    display: none;
-  }
-
-  .header_menu button {
-    font-size: 16px;
-  }
-
-  .header_img img {
-    display: none;
-  }
-
-  .header_menu {
-    gap: 20px;
-  }
+	header {
+		gap: 20px;
+	}
+	header .header_search_bar div p:first-of-type {
+		font-size: 16px;
+	}
+	header .header_search_bar div p:last-of-type {
+		display: none;
+	}
+	header .header_menu button {
+		font-size: 16px;
+	}
+	header .header_img img {
+		display: none;
+	}
+	header .header_menu {
+		gap: 20px;
+	}
 }
 
-@media (max-width:1000px) {
-
+@media (max-width: 1000px) {
 }
 
 /********** footer **********/
 footer {
-  margin-top: 30px;
-  border-top: 3px solid #2300ff;
-  text-align: left;
+	margin-top: 30px;
+	border-top: 3px solid var(--primary-color);
+	text-align: left;
 }
 
 .footer_menu {
-  border-bottom: 1px solid #b3b3b3;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 200px));
-  gap: 40px 100px;
-  align-content: center;
-  justify-content: center;
-  padding: 3rem 1rem 1.5rem 1rem;
+	border-bottom: 1px solid #b3b3b3;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(max-content, 200px));
+	gap: 40px 100px;
+	align-content: center;
+	justify-content: center;
+	padding: 3rem 1rem 1.5rem 1rem;
 }
 
 .footer_menu p {
-  font-weight: bold;
-  width: 100%;
-  border-bottom: 1px solid #2300ff;
-  margin-bottom: 10px;
-  color: #2300ff;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px solid var(--primary-color);
+	margin-bottom: 10px;
+	color: var(--primary-color);
 }
 
 footer a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 footer ul {
-  padding-left: 1em;
-  list-style-type: square;
+	padding-left: 1em;
+	list-style-type: square;
 }
 
 footer li::marker {
-  color: #2300ff;
+	color: var(--primary-color);
 }
 
 footer li {
-  margin-top: 5px;
-  font-size: small;
+	margin-top: 5px;
+	font-size: small;
 }
 
 footer li span {
-  color: black;
+	color: black;
 }
 
 .copyright {
-  text-align: center;
-  padding-top: 10px;
+	text-align: center;
+	padding-top: 10px;
 }
 
 .copyright p:last-of-type {
-  color: #b3b3b3;
+	color: #b3b3b3;
 }
 
-@media (max-width:1200px) {
-  .footer_menu {
-    gap: 20px 40px;
-  }
+@media (max-width: 1200px) {
+	.footer_menu {
+		gap: 20px 40px;
+	}
 }
-@media (max-width:510px) {
-  footer .copyright {
-    font-size: small;
-  }
+@media (max-width: 510px) {
+	footer .copyright {
+		font-size: small;
+	}
 }
 
 /********** popUp **********/
 .popup {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #b3b3b3;
-  border-radius: 5px;
-  padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #b3b3b3;
+	border-radius: var(--border-radius);
+	padding: 15px;
 }
 
 .popup section:first-of-type {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	align-items: center;
 }
 
 .popup button {
-  color: white;
-  background-color: #2300ff;
-  border-radius: 5px;
-  border: none;
+	color: white;
+	background-color: var(--primary-color);
+	border-radius: var(--border-radius);
+	border: none;
 }
 
 .popup i {
-  padding-right: 10px;
-  font-size: 24px;
+	padding-right: 10px;
+	font-size: 24px;
 }
 
 .popup_question section:first-of-type,
 #search_stock_fail_popup section:first-of-type {
-  gap: 20px;
+	gap: 20px;
 }
 
 /* logout, import, export */
 .popup_question {
-  width: 500px;
-  height: 150px;
-  font-size: 24px;
+	width: 500px;
+	height: 150px;
+	font-size: 24px;
 }
 
 .popup_question div {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 
 .popup_question button {
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
-  font-weight: bold;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .popup_question button:last-of-type {
-  background-color: white;
-  border: 1px solid #2300ff;
-  color: #2300ff;
+	background-color: white;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
 }
 
 .popup_message {
-  width: 800px;
-  height: 50px;
-  font-size: 32px;
-  align-items: center;
-  text-align: center;
+	width: 800px;
+	height: 50px;
+	font-size: 32px;
+	align-items: center;
+	text-align: center;
 }
 
 .popup_message p {
-  width: 100%;
+	width: 100%;
 }
 
 /********** registration **********/
 .popup_register {
-  width: 1000px;
-  height: 300px;
+	width: 1000px;
+	height: 300px;
 }
 
 .popup_register section {
-  gap: 20px;
+	gap: 20px;
 }
 
 .popup_register p:first-of-type {
-  font-size: 32px;
+	font-size: 32px;
 }
 
 .popup_register p:last-of-type {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 /********** search_stock **********/
 #search_stock_fail_popup {
-  width: 600px;
-  height: 200px;
+	width: 600px;
+	height: 200px;
 }
 
 #search_stock_fail_popup button {
-  width: 200px;
-  height: 50px;
+	width: 200px;
+	height: 50px;
 }
 
 #search_stock_fail_popup button i {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 /********** forms **********/
 .page_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .page_info {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .entry_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
 }
 
 .form_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-  width: 900px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 20px;
+	width: 900px;
 }
 
 .entry_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 900px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 900px;
 }
 
 .entry_box label {
-  text-align: left;
+	text-align: left;
 }
 
 .entry_box input,
 .entry_box textarea {
-  padding: 5px;
-  border-radius: 5px;
+	padding: 5px;
+	border-radius: var(--border-radius);
 }
 
 .entry_box input {
-  height: 24px;
+	height: 24px;
 }
 
 .entry_box textarea {
-  height: 150px;
+	height: 150px;
 }
 
 .check_box {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+	display: flex;
+	gap: 10px;
+	align-items: center;
 }
 
 .check_box input {
-  width: 20px;
-  height: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .check_box label {
-  text-align: left;
+	text-align: left;
 }
 
 .button {
-  width: 700px;
-  height: 60px;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #2300ff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+	width: 700px;
+	height: 60px;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: var(--border-radius);
 }
 
-@media (max-width:1200px) {
-  .form_info {
-    width: 700px;
-  }
+@media (max-width: 1200px) {
+	.form_info {
+		width: 700px;
+	}
 
-  .entry_box {
-    width: 700px;
-  }
+	.entry_box {
+		width: 700px;
+	}
 
-  .button {
-    width: 500px;
-  }
+	.button {
+		width: 500px;
+	}
 }
