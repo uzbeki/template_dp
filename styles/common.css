@@ -2,7 +2,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: center;
   gap: 50px;
 }
@@ -30,7 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 30px;
 }
 
 /********** header **********/
@@ -154,6 +154,10 @@ header {
   .header_menu {
     gap: 20px;
   }
+}
+
+@media (max-width:1000px) {
+
 }
 
 /********** footer **********/
@@ -318,7 +322,6 @@ footer li span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20px;
 }
 
 .page_info {
@@ -331,7 +334,7 @@ footer li span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .form_info {
@@ -339,14 +342,14 @@ footer li span {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-  width: 1000px;
+  width: 900px;
 }
 
 .entry_box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 1000px;
+  width: 900px;
 }
 
 .entry_box label {
@@ -355,17 +358,16 @@ footer li span {
 
 .entry_box input,
 .entry_box textarea {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  font-size: 24px;
 }
 
 .entry_box input {
-  height: 50px;
+  height: 24px;
 }
 
 .entry_box textarea {
-  height: 300px;
+  height: 150px;
 }
 
 .check_box {
@@ -384,7 +386,7 @@ footer li span {
 }
 
 .button {
-  width: 900px;
+  width: 700px;
   height: 60px;
   font-size: 24px;
   font-weight: bold;
