@@ -193,6 +193,10 @@ footer ul {
   list-style-type: square;
 }
 
+footer li::marker {
+  color: #2300ff;
+}
+
 footer li {
   margin-top: 5px;
   font-size: small;
