@@ -1,0 +1,36 @@
+#withdraw-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#withdraw-text-box {
+  text-align: center;
+  display: block;
+}
+#withdraw-text {
+  text-align: left;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+#withdraw-text p {
+  margin-bottom: 5px;
+}
+.withdraw-form {
+  margin: 15px 0;
+  font-size: 1.3rem;
+}
+.withdraw-form input{
+ font-size: 1.5rem; 
+}
+  
+.btn-box {
+    text-align: center;
+}
+#withdraw-btn {
+  margin-top: 10px;
+  background-color: #2300ff;
+  color: #ffffff;
+  border: none;
+  width: 20%;
+  padding: 7px 0;
+}

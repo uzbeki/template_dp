@@ -47,12 +47,9 @@ body {
 #privacy-policy-box {
   margin: 0 12%;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
   text-align: right;
-  align-items: flex-end;
 }
-#privacy-policy-box p {
+#privacy-policy-text {
   margin: 0;
   display: inline-block;
   text-align: left;

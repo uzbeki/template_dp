@@ -1,15 +1,36 @@
 #top-content {
-    display: flex;
+  display: flex;
+  align-items: center;
+}
 }
 #top-content img {
-    width: 20%;
-    /* height: auto; */
+  width: 20%;
 }
 #top-content h2 {
-    color: #2300ff;
+  color: #2300ff;
+  font-size: 1.3rem;
 }
-#top-content #top-paragraph p{
-    margin-bottom: 0;
-    margin-top: 2px;
-    font-size: 0.5rem;
+.search-form {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+#top-content #top-paragraph p {
+  margin-bottom: 0;
+  margin-top: 2px;
+  font-size: 0.5rem;
+}
+#top-paragraph-box {
+    text-align: center;
+}
+#top-paragraph {
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.header_menu {
+ margin: 0 20px;
 }

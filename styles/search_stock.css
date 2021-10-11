@@ -1,8 +1,19 @@
+main,
+body {
+  display: block;
+}
 .table-top {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+.sort-titel {
+  text-align: left;
+}
+table {
+  max-width: 800px;
 }
 #search-stock-table {
   border: 0;
@@ -12,11 +23,22 @@
   border-spacing: 0;
   border-collapse: separate;
   overflow: hidden;
-  border-radius: 5px;
 }
+#search-stock-table tr:nth-child(2n) {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 15px;
+}
+#search-stock-table tr:nth-child(2n + 1) {
+  background-color: #e6e6e6;
+  color: #000000;
+  padding: 5px 15px;
+}
+
 #search-stock-table th {
   background-color: #2300ff;
-  padding: 5px 15px;
+  padding: 5px 30px;
+  color: #ffffff;
 }
 .fa-caret-left,
 .fa-caret-right {
