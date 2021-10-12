@@ -47,12 +47,12 @@ header {
 }
 
 header li {
-  list-style: none;
+	list-style: none;
 }
 
 header button,
 header a {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 header .search_area {
@@ -85,12 +85,12 @@ header .search_bar {
 
 header .search_bar input,
 header .search_bar button,
-header .header_menu button {
-  border: none;
-  background-color: white;
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: var(--border-radius);
+header .header_menu nav button {
+	border: none;
+	background-color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: var(--border-radius);
 }
 
 header .search_bar input {
@@ -113,145 +113,153 @@ header .header_menu nav {
   gap: 30px;
 }
 header .header_menu nav button {
-  padding: 0;
-  outline: none;
-  border-radius: 0;
+	padding: 0;
+	outline: none;
+	border-radius: 0;
 }
 header .header_menu nav button::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: width 0.3s;
+	content: "";
+	display: block;
+	width: 0;
+	height: .5px;
+	background: var(--primary-color);
+	transition: width 0.3s;
 }
 
-header .header_menu button span {
-  color: var(--primary-color);
+header .header_menu nav button span {
+	color: var(--primary-color);
 }
 
 header button.header_button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px 30px;
+	padding: 0;
+	border: 0;
+	outline: none;
+}
+
+header button.header_button a{
+	background-color: var(--primary-color);
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	border-radius: var(--border-radius);
 }
 
 @media (max-width: 1800px) {
-  header .header_search_bar div p:first-of-type {
-    font-size: 24px;
-  }
-  header .header_search_bar div p:last-of-type {
-    font-size: 16px;
-  }
-  header .header_menu button {
-    font-size: 16px;
-  }
+	header .header_search_bar div p:first-of-type {
+		font-size: 24px;
+	}
+	header .header_search_bar div p:last-of-type {
+		font-size: 16px;
+	}
+	header .header_menu button a{
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 1400px) {
-  header {
-    gap: 50px;
-  }
-  header .header_search_bar div p:first-of-type {
-    font-size: 16px;
-  }
+	header {
+		gap: 50px;
+	}
+	header .header_search_bar div p:first-of-type {
+		font-size: 16px;
+	}
 
-  header .header_menu button {
-    font-size: 16px;
-  }
-  header .header_menu {
-    gap: 20px;
-  }
+	/* header .header_menu button {
+		font-size: 16px;
+	} */
+	header .header_menu {
+		gap: 20px;
+	}
 }
 
 @media (max-width: 1120px) {
-  header .header_menu nav {
-    gap: 15px;
-  }
-  header .header_menu nav button {
-    font-size: 14px;
-  }
-  header .header_menu button.header_button {
-    /* font-size: 14px; */
-    padding: 8px 20px;
-  }
+	header .header_menu nav {
+		gap: 15px;
+	}
+	header .header_menu nav button {
+		font-size: 14px;
+	}
+	header .header_menu button.header_button a {
+		/* font-size: 14px; */
+		padding: 8px 20px;
+	}
 }
 
 @media (max-width: 1024px) {
-  header {
-    margin-top: 0;
-    gap: 80px;
-  }
-  header .header_search_bar div p:first-of-type {
-    font-size: small;
-  }
-  header .header_search_bar div p:last-of-type {
-    font-size: 6px;
-  }
-  header .search_bar button {
-    padding: 6px 10px;
-  }
-  header .header_search_bar input {
-    font-size: 16px;
-    padding: 6px 0 6px 10px;
-  }
+	header {
+		margin-top: 0;
+		gap: 80px;
+	}
+	header .header_search_bar div p:first-of-type {
+		font-size: small;
+	}
+	header .header_search_bar div p:last-of-type {
+		font-size: 6px;
+	}
+	header .search_bar button {
+		padding: 6px 10px;
+	}
+	header .header_search_bar input {
+		font-size: 16px;
+		padding: 6px 0 6px 10px;
+	}
 }
 @media (max-width: 1000px) {
 }
 @media (max-width: 900px) {
-  header {
-    gap: 30px;
-  }
+	header {
+		gap: 30px;
+	}
 }
 
 @media (hover: hover) {
-  header .header_menu nav button:hover::after,
-  header .header_menu nav button:focus::after {
-    width: 100%;
-  }
+	header .header_menu nav button:hover::after,
+	header .header_menu nav button:focus::after {
+		width: 100%;
+	}
 }
 
 /* Dropdown styling */
 .dropdown {
-  position: relative;
+	position: relative;
 }
 .dropdown button.dropdown_link {
-  color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 .dropdown button.dropdown_link:hover,
 .dropdown > button.dropdown_link:active {
-  color: black;
+	color: black;
 }
 .dropdown .dropdown_content {
-  position: absolute;
-  background-color: var(--primary-color);
-  color: white;
-  z-index: 1;
-  left: 50%;
-  top: calc(100% + 0.4rem);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  width: max-content;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	position: absolute;
+	background-color: var(--primary-color);
+	color: white;
+	z-index: 1;
+	left: 50%;
+	top: calc(100% + 0.4rem);
+	border-radius: var(--border-radius);
+	padding: 1rem;
+	width: max-content;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 
-  /* to allow mouse events to pass, translateY 10px blocks otherwise */
-  pointer-events: none;
+	/* to allow mouse events to pass, translateY 10px blocks otherwise */
+	pointer-events: none;
 
-  opacity: 0;
-  transform: translateY(var(--translateY, -10px)) translateX(-50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	opacity: 0;
+	transform: translateY(var(--translateY, -10px)) translateX(-50%);
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .dropdown .dropdown_content::before {
-  --triangle-size: 0.4rem;
-  content: "";
-  position: absolute;
-  top: -0.4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: var(--triangle-size) solid transparent;
-  border-right: var(--triangle-size) solid transparent;
-  border-bottom: var(--triangle-size) solid var(--primary-color);
+	--triangle-size: 0.4rem;
+	content: "";
+	position: absolute;
+	top: -0.4rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-left: var(--triangle-size) solid transparent;
+	border-right: var(--triangle-size) solid transparent;
+	border-bottom: var(--triangle-size) solid var(--primary-color);
 }
 
 .dropdown .dropdown_content {
@@ -299,9 +307,9 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 footer ul {
