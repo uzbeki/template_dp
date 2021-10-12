@@ -23,4 +23,5 @@ p {
 
 p:first-of-type {
     font-weight: bold;
+    font-size: 24px;
 }
