@@ -7,43 +7,61 @@
     <link rel="stylesheet" href="../styles/all.css" />
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/register.css" />
+    <script src="../js/dropdown.js" defer></script>
     <title>register_supplier</title>
   </head>
   <body>
-    <header>
+  <header>
+    <section class="search_area">
       <section class="header_img">
         <img src="../assets/logo.png" alt="logo" />
       </section>
-      <section class="header_serch_bar">
+      <section class="header_search_bar">
         <div>
           <p>DEVICE PARTNERS</p>
           <p>- Search Service Platform -</p>
         </div>
-        <section class="serch_bar">
-          <input type="serch" placeholder="在庫検索  例：TLP281" />
-          <button class="serch_button"><i class="fas fa-search"></i></button>
+        <section class="search_bar">
+          <input type="search" placeholder="在庫検索  例：TLP281" />
+          <button class="search_button"><i class="fas fa-search"></i></button>
         </section>
       </section>
-      <section class="header_menu">
-        <nav>
-          <button>
-            MENU <span><i class="fas fa-chevron-down"></i></span>
-          </button>
-          <button>
-            GUIDE <span><i class="fas fa-chevron-down"></i></span>
-          </button>
-          <button>
-            TERMS <span><i class="fas fa-chevron-down"></i></span>
-          </button>
-          <button>
-            OTHERS <span><i class="fas fa-chevron-down"></i></span>
-          </button>
-        </nav>
-        <button class="header_button">
-          ログイン <i class="fas fa-sign-in-alt"></i>
-        </button>
-      </section>
-    </header>
+    </section>
+    <section class="header_menu">
+      <nav>
+        <li class="dropdown" data-dropdown>
+          <button class="dropdown_link" data-dropdown-button>MENU <span><i class="fas fa-chevron-down"></i></span></button>
+          <ul class="dropdown_content">
+            <li><a href="./register_buyer.html">バイヤーユーザー登録</a></li>
+            <li><a href="./register_supplier.html">サプライヤーユーザー登録</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-dropdown>
+          <button class="dropdown_link" data-dropdown-button>GUIDE <span><i class="fas fa-chevron-down"></i></span></button>
+          <ul class="dropdown_content">
+            <li><a href="./about.html">DEVICE PARTNERSについて</a></li>
+            <li><a href="./user_guide.html">ご利用ガイド</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-dropdown>
+          <button class="dropdown_link" data-dropdown-button>TERMS <span><i class="fas fa-chevron-down"></i></span></button>
+          <ul class="dropdown_content">
+            <li><a href="./terms_of_use.html">ご利用規約</a></li>
+            <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
+          </ul>
+        </li>
+        <li class="dropdown" data-dropdown>
+          <button class="dropdown_link" data-dropdown-button>OTHERS <span><i class="fas fa-chevron-down"></i></span></button>
+          <ul class="dropdown_content">
+            <li><a href="./contact.html">お問合せ</a></li>
+            <li><a href="./owner.html">運営会社</a></li>
+            <li><a href="./withdraw.html">退会</a></li>
+          </ul>
+        </li>
+      </nav>
+      <button class="header_button" onclick="location.href='./login_buyer.html'">ログイン <i class="fas fa-sign-in-alt"></i></button>
+    </section>
+  </header>
     <main>
       <section class="page_title">
         <h1>サプライヤーユーザー登録</h1>
