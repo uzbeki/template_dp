@@ -34,6 +34,10 @@ main {
   justify-content: flex-start;
 }
 
+button {
+	cursor: pointer;
+}
+
 /********** header **********/
 header {
   --header-height: 100px;
@@ -511,10 +515,12 @@ footer li {
 .check_box input {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .check_box label {
   text-align: left;
+  cursor: pointer;
 }
 
 .button {
