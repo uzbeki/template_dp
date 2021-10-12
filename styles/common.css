@@ -312,7 +312,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: inherit;
+  color: black;
   cursor: pointer;
 }
 
@@ -321,8 +321,12 @@ footer ul {
   list-style-type: square;
 }
 
-footer li::marker {
+footer li {
   color: var(--primary-color);
+}
+
+footer li:hover {
+  color: #00FFF9;
 }
 
 footer li {

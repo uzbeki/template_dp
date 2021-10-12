@@ -1,107 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/estimate.css" />
+    <script src="../js/dropdown.js" defer></script>
+    <title>estimate_parts</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/all.css" />
-  <link rel="stylesheet" href="../styles/common.css" />
-  <link rel="stylesheet" href="../styles/estimate.css" />
-  <script src="../js/dropdown.js" defer></script>
-  <title>estimate_parts</title>
-</head>
-
-<body>
-  <main>
-    <section class="page_title">
-      <h1>部品見積依頼</h1>
-      <section class="page_info">
-        <p>
-          必要数量をご記入して頂き送信お願い致します。<br />追って御見積回答させて頂きます。宜しくお願いします。
-        </p>
+  <body>
+    <main>
+      <section class="page_title">
+        <h1>部品見積依頼</h1>
+        <section class="page_info">
+          <p>
+            必要数量をご記入して頂き送信お願い致します。<br />追って御見積回答させて頂きます。宜しくお願いします。
+          </p>
+        </section>
       </section>
-    </section>
-    <form action="" class="entry_form">
-      <div class="entry_box name_box">
-        <label for="name">お名前</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="entry_box furigana_box">
-        <label for="furigana">ふりがな</label>
-        <input type="text" name="furigana" id="furigana" />
-      </div>
-      <div class="entry_box company_box">
-        <label for="company">御社名</label>
-        <input type="text" name="company" id="company" />
-      </div>
-      <div class="entry_box postalcode_box">
-        <label for="postalcode">郵便番号</label>
-        <input type="text" name="postalcode" id="postalcode" pattern="\d{3}-?\d{4}" />
-      </div>
-      <div class="entry_box address_box">
-        <label for="address">住所</label>
-        <input type="text" name="address" id="address" />
-      </div>
-      <div class="entry_box mail_box">
-        <label for="mail">メールアドレス</label>
-        <input type="email" name="mail" id="mail" />
-      </div>
-      <div class="entry_box phone_box">
-        <label for="phone">電話番号</label>
-        <input type="tel" name="phone" id="phone" />
-      </div>
-      <div class="entry_box fax_box">
-        <label for="fax">FAX番号</label>
-        <input type="tel" name="fax" id="fax" />
-      </div>
-      <div class="entry_box homepage_box">
-        <label for="homepage">ホームページ</label>
-        <input type="url" name="homepage" id="homepage" />
-      </div>
-      <div class="entry_box manufacturer_box">
-        <label for="manufacturer">メーカー</label>
-        <input type="text" name="manufacturer" id="manufacturer" />
-      </div>
-      <div class="entry_box product_box">
-        <label for="product">品名</label>
-        <input type="text" name="product" id="product" />
-      </div>
-      <div class="entry_box model_box">
-        <label for="model">型式</label>
-        <input type="text" name="model" id="model" />
-      </div>
-      <div class="entry_box quantity_box">
-        <label for="quantity">数量</label>
-        <input type="number" name="quantity" id="quantity" />
-      </div>
-      <div class="entry_box style_box">
-        <label for="style">荷姿</label>
-        <input type="text" name="style" id="style" />
-      </div>
-      <div class="entry_box rohs_box">
-        <label for="rohs">ROHS</label>
-        <input type="text" name="rohs" id="rohs" />
-      </div>
-      <div class="entry_box dc_box">
-        <label for="dc">DC</label>
-        <input type="text" name="dc" id="dc" />
-      </div>
-      <section class="form_info">
-        <div class="entry_box remarks_box">
-          <label for="remarks">備考</label>
-          <input type="text" name="remarks" id="remarks" />
+      <form action="" class="entry_form">
+        <div class="entry_box name_box">
+          <label for="name">お名前</label>
+          <input type="text" name="name" id="name" />
         </div>
-        <div class="check_box">
-          <input type="checkbox" id="checkbox1" />
-          <label for="checkbox1">
-            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
-          </label>
+        <div class="entry_box furigana_box">
+          <label for="furigana">ふりがな</label>
+          <input type="text" name="furigana" id="furigana" />
         </div>
-        <section><button class="button">送信</button></section>
-      </section>
-    </form>
-  </main>
-</body>
-
+        <div class="entry_box company_box">
+          <label for="company">御社名</label>
+          <input type="text" name="company" id="company" />
+        </div>
+        <div class="entry_box postalcode_box">
+          <label for="postalcode">郵便番号</label>
+          <input
+            type="text"
+            name="postalcode"
+            id="postalcode"
+            pattern="\d{3}-?\d{4}"
+          />
+        </div>
+        <div class="entry_box address_box">
+          <label for="address">住所</label>
+          <input type="text" name="address" id="address" />
+        </div>
+        <div class="entry_box mail_box">
+          <label for="mail">メールアドレス</label>
+          <input type="email" name="mail" id="mail" />
+        </div>
+        <div class="entry_box phone_box">
+          <label for="phone">電話番号</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="entry_box fax_box">
+          <label for="fax">FAX番号</label>
+          <input type="tel" name="fax" id="fax" />
+        </div>
+        <div class="entry_box homepage_box">
+          <label for="homepage">ホームページ</label>
+          <input type="url" name="homepage" id="homepage" />
+        </div>
+        <div class="entry_box manufacturer_box">
+          <label for="manufacturer">メーカー</label>
+          <input type="text" name="manufacturer" id="manufacturer" />
+        </div>
+        <div class="entry_box product_box">
+          <label for="product">品名</label>
+          <input type="text" name="product" id="product" />
+        </div>
+        <div class="entry_box model_box">
+          <label for="model">型式</label>
+          <input type="text" name="model" id="model" />
+        </div>
+        <div class="entry_box quantity_box">
+          <label for="quantity">数量</label>
+          <input type="number" name="quantity" id="quantity" />
+        </div>
+        <div class="entry_box style_box">
+          <label for="style">荷姿</label>
+          <input type="text" name="style" id="style" />
+        </div>
+        <div class="entry_box rohs_box">
+          <label for="rohs">ROHS</label>
+          <input type="text" name="rohs" id="rohs" />
+        </div>
+        <div class="entry_box dc_box">
+          <label for="dc">DC</label>
+          <input type="text" name="dc" id="dc" />
+        </div>
+        <section class="form_info">
+          <div class="entry_box remarks_box">
+            <label for="remarks">備考</label>
+            <input type="text" name="remarks" id="remarks" />
+          </div>
+          <div class="check_box">
+            <input type="checkbox" id="checkbox1" />
+            <label for="checkbox1">
+              確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+            </label>
+          </div>
+          <section><button class="button">送信</button></section>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
