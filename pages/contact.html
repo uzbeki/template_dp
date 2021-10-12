@@ -1,186 +1,74 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/contact.css" />
-    <script src="../js/dropdown.js" defer></script>
-    <title>contact</title>
-  </head>
-  <body>
-    <header>
-      <section class="search_area">
-        <section class="header_img">
-          <img src="../assets/logo.png" alt="logo" />
-        </section>
-        <section class="header_search_bar">
-          <div>
-            <p>DEVICE PARTNERS</p>
-            <p>- Search Service Platform -</p>
-          </div>
-          <section class="search_bar">
-            <input type="search" placeholder="在庫検索  例：TLP281" />
-            <button class="search_button"><i class="fas fa-search"></i></button>
-          </section>
-        </section>
-      </section>
-      <section class="header_menu">
-        <nav>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              MENU <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./register_buyer.html">バイヤーユーザー登録</a></li>
-              <li>
-                <a href="./register_supplier.html">サプライヤーユーザー登録</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              GUIDE <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./about.html">DEVICE PARTNERSについて</a></li>
-              <li><a href="./user_guide.html">ご利用ガイド</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              TERMS <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./terms_of_use.html">ご利用規約</a></li>
-              <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              OTHERS <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./contact.html">お問合せ</a></li>
-              <li><a href="./owner.html">運営会社</a></li>
-              <li><a href="./withdraw.html">退会</a></li>
-            </ul>
-          </li>
-        </nav>
-        <button
-          class="header_button"
-          onclick="location.href='./login_buyer.html'"
-        >
-          ログイン <i class="fas fa-sign-in-alt"></i>
-        </button>
-      </section>
-    </header>
-    <main>
-      <section class="page_title">
-        <h1>お問い合わせ</h1>
-        <section class="page_info">
-          <p>
-            <i class="fas fa-phone-alt"></i>　<a href="tel:0492145194"
-              >049-214-5194</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-globe"></i>
-            <a href="https://www.devicepartners.co.jp"
-              >https://www.devicepartners.co.jp</a
-            >
-          </p>
-        </section>
-      </section>
-      <form action="" class="entry_form">
-        <div class="entry_box name_box">
-          <label for="name">お名前</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="entry_box furigana_box">
-          <label for="furigana">ふりがな</label>
-          <input type="text" name="furigana" id="furigana" />
-        </div>
-        <div class="entry_box company_box">
-          <label for="company">御社名</label>
-          <input type="text" name="company" id="company" />
-        </div>
-        <div class="entry_box phone_box">
-          <label for="phone">電話番号</label>
-          <input type="tel" name="phone" id="phone" />
-        </div>
-        <div class="entry_box mail_box">
-          <label for="mail">メールアドレス</label>
-          <input type="email" name="mail" id="mail" />
-        </div>
-        <div class="entry_box text_box">
-          <label for="text">お問合せ内容</label>
-          <textarea name="text" id="text" cols="30" rows="10"></textarea>
-        </div>
-        <section class="form_info">
-          <div class="file_box">
-            <label for="file">添付ファイル</label>
-            <section>
-              <button>ファイルを選択</button>
-              <p class="file_name">選択されていません</p>
-            </section>
-          </div>
-          <div class="check_box">
-            <input type="checkbox" id="checkbox1" />
-            <label for="checkbox1">
-              確認画面は表示されません。上記内容にて送信しますがよろしいですか？
-            </label>
-          </div>
-          <section><button class="button">送信</button></section>
-        </section>
-      </form>
-    </main>
-    <footer>
-      <section class="footer_menu">
-        <section>
-          <p>MENU</p>
-          <ul class="footer_list menu">
-            <li><a href="./login_buyer.html">ログイン</a></li>
-            <li><a href="./update_buyer_info.html">ユーザー情報編集</a></li>
-            <li><a href="./register_buyer.html">バイヤーユーザー登録</a></li>
-            <li>
-              <a href="./register_supplier.html">サプライヤーユーザー登録</a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <p>GUIDE</p>
-          <ul class="footer_list guide">
-            <li><a href="./about.html">DEVICE PARTNERSについて</a></li>
-            <li><a href="./user_guide.html">ご利用ガイド</a></li>
-          </ul>
-        </section>
-        <section>
-          <p>TERMS</p>
-          <ul class="footer_list terms">
-            <li><a href="./terms_of_use.html">ご利用ガイド</a></li>
-            <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
-          </ul>
-        </section>
-        <section>
-          <p>OTHERS</p>
-          <ul class="footer_list others">
-            <li><a href="./contact.html">お問合せ</a></li>
-            <li><a href="./owner.html">運営会社</a></li>
-            <li><a href="./withdraw.html">退会</a></li>
-          </ul>
-        </section>
-      </section>
-      <section class="copyright">
-        <p>Copyright © DEVICE PARTNERS CO., LTD. All Rights Reserved.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/all.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/contact.css" />
+  <script src="../js/dropdown.js" defer></script>
+  <title>contact</title>
+</head>
+
+<body>
+  <main>
+    <section class="page_title">
+      <h1>お問い合わせ</h1>
+      <section class="page_info">
         <p>
-          <a href="https://asterone.co.jp/"
-            >Made with love by ASTERONE CO., LTD.</a
-          >
+          <i class="fas fa-phone-alt"></i>　<a href="tel:0492145194">049-214-5194</a>
+        </p>
+        <p>
+          <i class="fas fa-globe"></i>
+          <a href="https://www.devicepartners.co.jp">https://www.devicepartners.co.jp</a>
         </p>
       </section>
-    </footer>
-  </body>
+    </section>
+    <form action="" class="entry_form">
+      <div class="entry_box name_box">
+        <label for="name">お名前</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="entry_box furigana_box">
+        <label for="furigana">ふりがな</label>
+        <input type="text" name="furigana" id="furigana" />
+      </div>
+      <div class="entry_box company_box">
+        <label for="company">御社名</label>
+        <input type="text" name="company" id="company" />
+      </div>
+      <div class="entry_box phone_box">
+        <label for="phone">電話番号</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+      <div class="entry_box mail_box">
+        <label for="mail">メールアドレス</label>
+        <input type="email" name="mail" id="mail" />
+      </div>
+      <div class="entry_box text_box">
+        <label for="text">お問合せ内容</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      </div>
+      <section class="form_info">
+        <div class="file_box">
+          <label for="file">添付ファイル</label>
+          <section>
+            <button>ファイルを選択</button>
+            <p class="file_name">選択されていません</p>
+          </section>
+        </div>
+        <div class="check_box">
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox1">
+            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
+          </label>
+        </div>
+        <section><button class="button">送信</button></section>
+      </section>
+    </form>
+  </main>
+</body>
+
 </html>

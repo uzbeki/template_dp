@@ -1,159 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <script src="../js/dropdown.js" defer></script>
-    <title>login_buyer</title>
-  </head>
-  <body>
-    <header>
-      <section class="search_area">
-        <section class="header_img">
-          <img src="../assets/logo.png" alt="logo" />
-        </section>
-        <section class="header_search_bar">
-          <div>
-            <p>DEVICE PARTNERS</p>
-            <p>- Search Service Platform -</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/all.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/login.css" />
+  <script src="../js/dropdown.js" defer></script>
+  <title>login_buyer</title>
+</head>
+
+<body>
+  <main>
+    <section class="page_info">
+      <button class="selected">バイヤー</button>
+      <button onclick="location.href='./login_supplier.html'">
+        サプライヤー
+      </button>
+    </section>
+    <form action="" class="entry_form">
+      <div class="entry_box mail_box">
+        <label for="mail">メールアドレス</label>
+        <input type="email" name="mail" id="mail" />
+      </div>
+      <div class="entry_box password_box">
+        <label for="password">パスワード</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <section class="form_info">
+        <section>
+          <div class="check_box">
+            <input type="checkbox" id="checkbox1" />
+            <label for="checkbox1">ログイン情報を保存</label>
           </div>
-          <section class="search_bar">
-            <input type="search" placeholder="在庫検索  例：TLP281" />
-            <button class="search_button"><i class="fas fa-search"></i></button>
-          </section>
-        </section>
-      </section>
-      <section class="header_menu">
-        <nav>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              MENU <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./register_buyer.html">バイヤーユーザー登録</a></li>
-              <li>
-                <a href="./register_supplier.html">サプライヤーユーザー登録</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              GUIDE <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./about.html">DEVICE PARTNERSについて</a></li>
-              <li><a href="./user_guide.html">ご利用ガイド</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              TERMS <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./terms_of_use.html">ご利用規約</a></li>
-              <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" data-dropdown>
-            <button class="dropdown_link" data-dropdown-button>
-              OTHERS <span><i class="fas fa-chevron-down"></i></span>
-            </button>
-            <ul class="dropdown_content">
-              <li><a href="./contact.html">お問合せ</a></li>
-              <li><a href="./owner.html">運営会社</a></li>
-              <li><a href="./withdraw.html">退会</a></li>
-            </ul>
-          </li>
-        </nav>
-        <button
-          class="header_button"
-          onclick="location.href='./login_buyer.html'"
-        >
-          ログイン <i class="fas fa-sign-in-alt"></i>
-        </button>
-      </section>
-    </header>
-    <main>
-      <section class="page_info">
-        <button class="selected">バイヤー</button>
-        <button onclick="location.href='./login_supplier.html'">
-          サプライヤー
-        </button>
-      </section>
-      <form action="" class="entry_form">
-        <div class="entry_box mail_box">
-          <label for="mail">メールアドレス</label>
-          <input type="email" name="mail" id="mail" />
-        </div>
-        <div class="entry_box password_box">
-          <label for="password">パスワード</label>
-          <input type="password" name="password" id="password" />
-        </div>
-        <section class="form_info">
-          <section>
-            <div class="check_box">
-              <input type="checkbox" id="checkbox1" />
-              <label for="checkbox1">ログイン情報を保存</label>
-            </div>
-            <p>
-              パスワードを忘れた方は<a href="update_buyer_info.html">こちら</a>
-            </p>
-          </section>
-          <section><button class="button">ログイン</button></section>
           <p>
-            ユーザー登録がまだの方は<a href="register_buyer.html">こちら</a>から
+            パスワードを忘れた方は<a href="update_buyer_info.html">こちら</a>
           </p>
         </section>
-      </form>
-    </main>
-    <footer>
-      <section class="footer_menu">
-        <section>
-          <p>MENU</p>
-          <ul class="footer_list menu">
-            <li><a href="./login_buyer.html">ログイン</a></li>
-            <li><a href="./update_buyer_info.html">ユーザー情報編集</a></li>
-            <li><a href="./register_buyer.html">バイヤーユーザー登録</a></li>
-            <li>
-              <a href="./register_supplier.html">サプライヤーユーザー登録</a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <p>GUIDE</p>
-          <ul class="footer_list guide">
-            <li><a href="./about.html">DEVICE PARTNERSについて</a></li>
-            <li><a href="./user_guide.html">ご利用ガイド</a></li>
-          </ul>
-        </section>
-        <section>
-          <p>TERMS</p>
-          <ul class="footer_list terms">
-            <li><a href="./terms_of_use.html">ご利用ガイド</a></li>
-            <li><a href="./privacy_policy.html">プライバシーポリシー</a></li>
-          </ul>
-        </section>
-        <section>
-          <p>OTHERS</p>
-          <ul class="footer_list others">
-            <li><a href="./contact.html">お問合せ</a></li>
-            <li><a href="./owner.html">運営会社</a></li>
-            <li><a href="./withdraw.html">退会</a></li>
-          </ul>
-        </section>
-      </section>
-      <section class="copyright">
-        <p>Copyright © DEVICE PARTNERS CO., LTD. All Rights Reserved.</p>
+        <section><button class="button">ログイン</button></section>
         <p>
-          <a href="https://asterone.co.jp/"
-            >Made with love by ASTERONE CO., LTD.</a
-          >
+          ユーザー登録がまだの方は<a href="register_buyer.html">こちら</a>から
         </p>
       </section>
-    </footer>
-  </body>
+    </form>
+  </main>
+</body>
+
 </html>
