@@ -27,17 +27,21 @@ body {
   overflow: hidden;
 }
 table {
-  max-width: 800px;
+  max-width: 1000px;
+}
+th,
+td {
+  font-size: 1.5rem;
 }
 #export-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
-  padding: 5px 15px;
+  padding: 5px 30px;
 }
 #export-table tr:nth-child(2n + 1) {
   background-color: #e6e6e6;
   color: #000000;
-  padding: 5px 15px;
+  padding: 5px 30px;
 }
 #export-table th {
   background-color: #2300ff;
@@ -55,7 +59,8 @@ table {
   margin-bottom: 40px;
 }
 #export-button {
-  width: 30%;
+  width: 400px;
+  height: 30px;
   padding: 5px 45px;
   color: #ffffff;
   background-color: #2300ff;

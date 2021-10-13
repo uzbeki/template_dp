@@ -29,7 +29,11 @@ body {
   overflow: hidden;
 }
 table {
-  max-width: 800px;
+  max-width: 950px;
+}
+th,
+td {
+  font-size: 1.1rem;
 }
 #update-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
@@ -51,6 +55,7 @@ table {
   color: #2300ff;
 }
 #update-button {
+  height: 30px;
   padding: 5px 90px;
   color: #ffffff;
   background-color: #2300ff;

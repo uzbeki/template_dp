@@ -17,7 +17,11 @@ body {
   cursor: pointer;
 }
 table {
-  max-width: 800px;
+  max-width: 950px;
+}
+th,
+td {
+  font-size: 1.1rem;
 }
 #search-stock-table {
   border: 0;
