@@ -1,9 +1,11 @@
 #owner-table {
   margin: 30px auto;
   font-size: 20px;
+  height: 90%;
 }
 #owner-table th {
-  padding-right: 20px;
+  padding-right: 30px;
+  text-align: left;
 }
 #owner-table td {
   text-align: left;
