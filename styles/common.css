@@ -363,7 +363,7 @@ footer li {
 .popup {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #2300ff;
   border-radius: var(--border-radius);
   padding: 15px;
 }
