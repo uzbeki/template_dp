@@ -1,5 +1,7 @@
 document.onclick = (e) => {
-	isDropDownButton = e.target.matches("[data-dropdown-button]");
+	// isDropDownButton = e.target.matches("[data-dropdown-button]");
+	isDropDownButton = e.target.closest("[data-dropdown-button]");
+	console.log(isDropDownButton);
 
 	// if the click is on a dropdown button or inside a dropdown content, do nothing
 	if (!isDropDownButton && e.target.closest("[data-dropdown]") !== null) return;
