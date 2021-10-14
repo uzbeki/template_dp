@@ -1,5 +1,10 @@
 main {
   font-weight: bold;
+  align-items: center;
+}
+
+.entry_form, .page_info {
+  padding: 0;
 }
 
 .page_info button {
