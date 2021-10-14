@@ -16,11 +16,6 @@ body {
 .sort-list {
   cursor: pointer;
 }
-/* @media (min-width: 1100px) {
-  table {
-    max-width: 1000px;
-  }
-} */
 table {
   max-width: 1000px;
 }
