@@ -16,6 +16,10 @@ main {
   width: 100%;
   line-height: 2em;
 }
+.img-titel {
+  margin-top: 20px;
+  margin-right: auto;
+}
 .blue-specification {
   color: #2300ff;
 }
@@ -23,5 +27,5 @@ main {
 #about-content img {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 10px;
 }
