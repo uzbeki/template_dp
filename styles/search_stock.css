@@ -16,12 +16,29 @@ body {
 .sort-list {
   cursor: pointer;
 }
+/* @media (min-width: 1100px) {
+  table {
+    max-width: 1000px;
+  }
+} */
 table {
-  max-width: 950px;
+  max-width: 1000px;
+}
+.text {
+  text-align: left;
+}
+.number {
+  text-align: right;
 }
 th,
 td {
+  padding: 5px 20px;
+}
+td {
   font-size: 1.1rem;
+}
+th {
+  font-size: 0.9rem;
 }
 #search-stock-table {
   border: 0;
@@ -35,20 +52,23 @@ td {
 #search-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
-  padding: 5px 15px;
 }
 #search-stock-table tr:nth-child(2n + 1) {
   background-color: #e6e6e6;
   color: #000000;
-  padding: 5px 15px;
 }
 
 #search-stock-table th {
   background-color: #2300ff;
-  padding: 5px 30px;
   color: #ffffff;
 }
 .fa-caret-left,
 .fa-caret-right {
   color: #2300ff;
+}
+.mail {
+  color: #2300ff;
+}
+.fa-envelope {
+  color: #000000;
 }
