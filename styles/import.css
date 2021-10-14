@@ -1,14 +1,25 @@
 .entry_form {
+  align-items: center;
+}
+
+.form_box {
+  display: flex;
+  flex-direction: column;
+   
   width: 500px;
   height: 500px;
   justify-content: center;
   border: 1px solid #b3b3b3;
   border-radius: 5px;
   box-shadow: 0px 0px 8px gray;
+  align-items: center;
+  gap: 30px;
 }
 
-.entry_form section {
+
+.form_box section {
   width: 400px;
+
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -30,13 +41,8 @@ p {
   font-size: 16px;
 }
 
-form section i {
+form div section i {
   font-size: 5rem;
   background-color: #f7f7f7;
   color: #2300ff;
-}
-
-main div {
-  display: flex;
-  justify-content: center;
 }
