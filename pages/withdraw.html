@@ -19,20 +19,21 @@
         <div id="withdraw-content">
             <div id="withdraw-text-box">
                 <div id="withdraw-text">
-                    <p>アカウント情報を削除することにより、ユーザー情報、在庫登録情報すべてを削除することになります。</p>
-                    <p>アカウント情報を削除する場合は、「退会」ボタンをクリックしてください。</p>
-                    <p>一旦削除した内容は復元することができません。</p>
+                    <p>バイヤー・サプライヤーアカウントを退会することにより、ユーザー情報、在庫登録情報すべてを削除することになります。</p>
+                    <p>本当に退会する場合は、ログイン時のパスワードを入力して「退会」ボタンをクリックしてください。</p>
+                    <p>一旦削除した内容は一切復元することができませんので､十分にご注意願います。</p>
                     <p>本当に退会する場合にはログイン時のパスワードを入力してください。</p>
                 </div>
-                <div id="password-box">
-                    <form action="" class="withdraw-form">
-                        <label for="pass">パスワード</label>
-                        <input type="password" name="pass" id="password" />
-                    </form>
-                </div>
-            </div>
-            <div class="btn-box">
-                <button type="button" id="withdraw-btn">退会</button>
+
+                <form action="" class="withdraw-form">
+                    <section class="entry_box">
+                        <label for="pass">パスワード<small>（必須）</small></label>
+                        <input type="password" name="pass" id="password" required autocomplete="current-password"
+                            autofocus />
+                    </section>
+                    <button type="submit" id="withdraw-btn">退会</button>
+                </form>
+
             </div>
         </div>
     </main>
