@@ -1,12 +1,18 @@
+main {
+  display: block;
+}
 #owner-table {
   margin: 30px 10%;
-  font-size: 20px;
-  height: 90%;
+  font-size: 1.3rem;
 }
 #owner-table th {
-  padding-right: 30px;
+  padding-right: 60px;
   text-align: left;
 }
 #owner-table td {
   text-align: left;
+}
+th,
+td {
+  padding: 8px 0;
 }
