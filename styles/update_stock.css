@@ -28,26 +28,30 @@ body {
   border-collapse: separate;
   overflow: hidden;
 }
+.text {
+  text-align: left;
+}
+.number {
+  text-align: right;
+}
 table {
   max-width: 950px;
 }
 th,
 td {
   font-size: 1.1rem;
+  padding: 5px 8px;
 }
 #update-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
-  padding: 5px 15px;
 }
 #update-stock-table tr:nth-child(2n + 1) {
   background-color: #e6e6e6;
   color: #000000;
-  padding: 5px 15px;
 }
 #update-stock-table th {
   background-color: #2300ff;
-  padding: 5px 30px;
   color: #ffffff;
 }
 .fa-caret-left,
