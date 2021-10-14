@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja-JP">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,69 +20,75 @@
       </div>
     </section>
     <form action="" class="entry_form">
+      <legend>
+        サプライヤーユーザー登録をいただきありがとうございます。サプライヤーユーザー登録いただきました内容は、弊社の掲げる個人情報保護方針に沿って管理し、お客様の同意なく第三者に開示・提供することはございません。詳細につきましては、当サイトの「プライバシーポリシー」をご参照ください。サプライヤーユーザー登録をした場合には審査及び承認後電子部品・半導体在庫登録、更新ができます。
+      </legend>
       <div class="entry_box name_box">
-        <label for="name">お名前</label>
-        <input type="text" name="name" id="name" />
+        <label for="name">お名前<small>（必須）</small></label>
+        <input type="text" name="name" id="name" autocomplete="name" required autofocus />
       </div>
       <div class="entry_box furigana_box">
-        <label for="furigana">ふりがな</label>
-        <input type="text" name="furigana" id="furigana" />
-      </div>
-      <div class="entry_box company_box">
-        <label for="company">御社名</label>
-        <input type="text" name="company" id="company" />
-      </div>
-      <div class="entry_box postalcode_box">
-        <label for="postalcode">郵便番号</label>
-        <input type="text" name="postalcode" id="postalcode" pattern="\d{3}-?\d{4}" />
-      </div>
-      <div class="entry_box address_box">
-        <label for="address">住所</label>
-        <input type="text" name="address" id="address" />
+        <label for="furigana">ふりがな<small>（必須）</small></label>
+        <input type="text" name="furigana" id="furigana" required />
       </div>
       <div class="entry_box mail_box">
-        <label for="mail">メールアドレス</label>
-        <input type="email" name="mail" id="mail" />
-      </div>
-      <div class="entry_box phone_box">
-        <label for="phone">電話番号</label>
-        <input type="tel" name="phone" id="phone" />
-      </div>
-      <div class="entry_box fax_box">
-        <label for="fax">FAX番号</label>
-        <input type="tel" name="fax" id="fax" />
-      </div>
-      <div class="entry_box homepage_box">
-        <label for="homepage">ホームページ</label>
-        <input type="url" name="homepage" id="homepage" />
+        <label for="mail">メールアドレス<small>（必須）</small></label>
+        <input type="email" name="mail" id="mail" autocomplete="email" required />
       </div>
       <div class="entry_box password_box">
-        <label for="password">パスワード</label>
-        <input type="password" name="password" id="password" />
+        <label for="password">パスワード<small>（必須）</small></label>
+        <input type="password" minlength="8" autocomplete="new-password" name="password" id="password" required />
       </div>
       <div class="entry_box repassword_box">
-        <label for="repassword">パスワード再入力</label>
-        <input type="password" name="repassword" id="repassword" />
+        <label for="repassword">パスワード再入力<small>（必須）</small></label>
+        <input type="password" minlength="8" autocomplete="new-password" name="repassword" id="repassword" required />
       </div>
+      <div class="entry_box company_box">
+        <label for="company">御社名<small>（必須）</small></label>
+        <input type="text" name="company" id="company" autocomplete="organization-title" required />
+      </div>
+      <div class="entry_box postalcode_box">
+        <label for="postalcode">郵便番号<small>（必須）</small></label>
+        <input type="text" name="postalcode" id="postalcode" pattern="\d{3}-?\d{4}" autocomplete="postal-code"
+          required />
+      </div>
+      <div class="entry_box address_box">
+        <label for="address">住所<small>（必須）</small></label>
+        <input type="text" name="address" id="address" autocomplete="street-address" required />
+      </div>
+
+      <div class="entry_box phone_box">
+        <label for="phone">電話番号<small>（必須）</small></label>
+        <input type="tel" name="phone" id="phone" autocomplete="tel-local" required />
+      </div>
+      <div class="entry_box fax_box">
+        <label for="fax">FAX番号<small>（任意）</small></label>
+        <input type="tel" name="fax" id="fax" autocomplete="fax" />
+      </div>
+      <div class="entry_box homepage_box">
+        <label for="homepage">URL<small>（必須）ない場合にはなしと記入ください。</small></label>
+        <input type="url" name="homepage" id="homepage" autocomplete="url" required />
+      </div>
+
       <div class="entry_box text_box">
-        <label for="business">事業内容</label>
-        <textarea name="business" id="business" cols="30" rows="10"></textarea>
+        <label for="business">事業内容<small>（必須）</small></label>
+        <textarea name="business" id="business" cols="30" rows="10"></textarerequireda>
       </div>
       <div class="entry_box date_box">
-        <label for="date">設立日</label>
-        <input type="date" name="date" id="date" />
+        <label for="date">設立日<small>（必須）</small></label>
+        <input type="date" name="date" id="date" required/>
       </div>
       <div class="entry_box capital_box">
-        <label for="capital">資本金</label>
-        <input type="number" name="capital" id="capital" />
+        <label for="capital">資本金<small>（必須）</small></label>
+        <input type="number" name="capital" id="capital" required/>
       </div>
       <div class="entry_box representative_box">
-        <label for="representative">代表者名</label>
-        <input type="text" name="representative" id="representative" />
+        <label for="representative">代表者名<small>（必須）</small></label>
+        <input type="text" name="representative" id="representative" required/>
       </div>
       <div class="entry_box text_box">
-        <label for="purpose">登録目的</label>
-        <textarea name="purpose" id="purpose" cols="30" rows="10"></textarea>
+        <label for="purpose">登録目的<small>（必須）</small></label>
+        <textarea name="purpose" id="purpose" cols="30" rows="10"></textarerequireda>
       </div>
       <div class="entry_box text_box">
         <label for="terms">利用規約</label>
@@ -90,26 +96,20 @@
       </div>
       <section class="form_info">
         <div class="check_box">
-          <input type="checkbox" id="checkbox1" />
+          <input type="checkbox" id="checkbox1" required />
           <label for="checkbox1">利用規約に同意する</label>
         </div>
         <div class="check_box">
-          <input type="checkbox" id="checkbox2" />
-          <label for="checkbox2">
-            確認画面は表示されません。上記内容にて送信しますがよろしいですか？
-          </label>
+          <input type="checkbox" id="checkbox3" />
+          <label for="checkbox3"> DEVICE PARTNER　- SEARCH SERVICE PLATFORM
+            -のサイト品質向上のため､<br />在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。 </label>
         </div>
         <div class="check_box">
-          <input type="checkbox" id="checkbox3" />
-          <label for="checkbox3">
-            DEVICE PARTNER　- SEARCH SERVICE PLATFORM
-            -のサイト品質向上のため､<br />在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。
-          </label>
+          <input type="checkbox" id="checkbox2" required />
+          <label for="checkbox2"> 確認画面は表示されません。上記内容にて送信しますがよろしいですか？ </label>
         </div>
-        <p>
-          ※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。
-        </p>
-        <section><button class="button">送信</button></section>
+        <p>※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。</p>
+        <section><button type="submit" class="button">送信</button></section>
       </section>
     </form>
   </main>

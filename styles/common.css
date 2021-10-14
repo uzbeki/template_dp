@@ -7,7 +7,7 @@ body {
 
 	--border-radius: 5px;
 	--primary-color: #2300ff;
-  --content-start: 10vw;
+	--content-start: 10vw;
 }
 
 body,
@@ -22,11 +22,11 @@ h2 {
 }
 
 .titel-bg {
-  width: 100%;
-  height: 45px;
-  background-color: #2300ff;
-  text-align: left;
-  box-sizing: border-box;
+	width: 100%;
+	height: 45px;
+	background-color: #2300ff;
+	text-align: left;
+	box-sizing: border-box;
 }
 h1 {
 	text-align: center;
@@ -492,14 +492,14 @@ footer li {
 .titel-bg,
 .page_info,
 .entry_form {
-	padding-left: 300px;
+	padding-left: var(--content-start);
 }
 
 @media (max-width: 1440px) {
 	.titel-bg,
 	.page_info,
 	.entry_form {
-		padding-left: 200px;
+		padding-left: var(--content-start);
 	}
 }
 
@@ -528,6 +528,12 @@ footer li {
 	justify-content: flex-start;
 	gap: 30px;
 }
+.entry_form legend {
+	text-align: start;
+	width: 90ch;
+	word-break: keep-all;
+	max-width: 90%;
+}
 
 .form_info {
 	display: flex;
@@ -535,8 +541,9 @@ footer li {
 	justify-content: flex-start;
 	gap: 20px;
 	width: 900px;
-  max-width: calc(100% - 150px);
+	max-width: calc(100% - 150px);
 }
+
 
 .entry_box {
 	display: flex;
@@ -548,20 +555,23 @@ footer li {
 .entry_box label {
 	text-align: left;
 }
+.entry_box label small {
+	color: #ea0000;
+}
 
 .entry_box input,
 .entry_box textarea {
-  padding: 5px;
+	padding: 5px;
 	border-radius: var(--border-radius);
-  border: 1px solid #ccc;
-  outline: none;
-  color: rgba(0, 0, 0, 0.8);
-  transition: all 0.15s ease-in;
+	border: 1px solid #ccc;
+	outline: none;
+	color: rgba(0, 0, 0, 0.8);
+	transition: all 0.15s ease-in;
 }
 .entry_box input:focus,
 .entry_box textarea:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 2px var(--primary-color);
+	border-color: var(--primary-color);
+	box-shadow: 0 0 2px var(--primary-color);
 }
 
 .entry_box input {
@@ -591,7 +601,7 @@ footer li {
 
 .entry_form .button {
 	width: 100%;
-  /* max-width: 90%; */
+	/* max-width: 90%; */
 	height: 60px;
 	font-size: 24px;
 	font-weight: bold;
@@ -605,19 +615,20 @@ footer li {
 	.page_title h1 {
 		font-size: 32px;
 	}
-
+	
 	.form_info {
 		width: 700px;
-    max-width: 90%;
+		max-width: 90%;
 	}
-
+	
 	.entry_box {
 		width: 700px;
-    max-width: 90%;
+		max-width: 90%;
 	}
+}
 
-	/* .entry_form .button {
-		width: 500px;
-    max-width: 90%;
-	} */
+@media (max-width: 450px) {
+	.entry_form legend {
+		word-break: break-all;
+	}
 }

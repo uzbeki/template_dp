@@ -1,47 +1,53 @@
 main {
-  font-weight: bold;
-  align-items: center;
+	font-weight: bold;
+	align-items: center;
 }
 
-.entry_form, .page_info {
-  padding: 0;
+.entry_form{
+	max-width: 90%;
+	width: 600px;
+}
+.entry_form,
+.page_info {
+	padding: 0;
 }
 
 .page_info button {
-  width: 200px;
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  background-color: white;
-  color: #c0c0c0;
+	width: 200px;
+	font-size: 24px;
+	font-weight: bold;
+	border: none;
+	background-color: white;
+	color: #c0c0c0;
 }
 
 .selected {
-  color: #2300ff !important;
+	color: #2300ff !important;
 }
 
-.entry_box {
-  width: 700px;
+.entry_box.mail_box,
+.entry_box.password_box {
+	max-width: 100%;
 }
 
-.form_info {
-  width: 700px;
-}
+/* .form_info {
+	width: 700px;
+} */
 
 .entry_box input {
-  border: none;
-  border-bottom: 1px solid #707070;
-  border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #707070;
+	border-radius: 0;
 }
 
 .button {
-  width: 700px;
+	width: 700px;
 }
 
 .form_info.login_form_footer {
-  max-width: 100%;
+	max-width: 100%;
 }
 .form_info section {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
