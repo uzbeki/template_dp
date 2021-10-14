@@ -1,55 +1,55 @@
 #top-content {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 #top-content img {
-  width: 20%;
+	width: 20%;
 }
 #top-right {
-  height: 35%;
-  width: auto;
-  position: left;
+	height: 35%;
+	width: auto;
+	position: left;
 }
 #top-content h2 {
-  color: #2300ff;
-  font-size: 1.3rem;
+	color: #2300ff;
+	font-size: 1.3rem;
 }
 .search-form {
-  margin: 10px 0;
-  font-size: 1.5rem;
+	margin: 10px 0;
+	font-size: 1.5rem;
 }
 #top-content #top-paragraph p {
-  margin-bottom: 0;
-  margin-top: 2px;
-  font-size: 0.5rem;
+	margin-bottom: 0;
+	margin-top: 2px;
+	font-size: 0.5rem;
 }
 #top-paragraph-box {
-  text-align: center;
+	text-align: center;
 }
 #top-paragraph {
-  margin-top: 10px;
-  display: inline-block;
-  text-align: left;
+	margin-top: 10px;
+	display: inline-block;
+	text-align: left;
 }
 header {
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 .header_menu {
-  margin: 0 20px;
+	margin: 0 20px;
 }
 
 main section {
-  background-image: url("../assets/top-image.png");
-  width: 300px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+	background-image: url("../assets/top-image.png");
+	width: 300px;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 section div {
-  background-image: radial-gradient(ellipse , transparent 45%, white 72% );
-    width: 300px;
-    height: 200px;
+	background-image: radial-gradient(ellipse, transparent 45%, white 72%);
+	width: 300px;
+	height: 200px;
 }

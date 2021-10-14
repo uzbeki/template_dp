@@ -38,6 +38,9 @@ main {
   width: 700px;
 }
 
+.form_info.login_form_footer {
+  max-width: 100%;
+}
 .form_info section {
   display: flex;
   justify-content: space-between;
