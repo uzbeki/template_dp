@@ -555,7 +555,7 @@ footer li {
 .entry_box label {
 	text-align: left;
 }
-.entry_box label small {
+label small {
 	color: #ea0000;
 }
 
