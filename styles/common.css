@@ -249,14 +249,14 @@ header button.header_button a {
 .dropdown > button.dropdown_link:active {
   color: black;
 }
-.dropdown button.dropdown_link div {
-  /* display: flex; */
-}
+/* .dropdown button.dropdown_link div {
+  display: flex;
+} */
 .dropdown button.dropdown_link div h3 {
   margin: 0.1rem 0;
 }
-.dropdown button.dropdown_link div p {
-}
+/* .dropdown button.dropdown_link div p {
+} */
 .dropdown .dropdown_content {
   position: absolute;
   background-color: var(--primary-color);
