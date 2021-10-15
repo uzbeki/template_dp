@@ -500,6 +500,12 @@ footer li {
   height: 100px;
 }
 
+/********** update_stock_success **********/
+#update_stock_success_popup {
+  width: 400px;
+}
+
+
 /********** forms **********/
 .titel-bg,
 .page_info,
