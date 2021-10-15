@@ -35,11 +35,18 @@ body {
   text-align: right;
 }
 table {
-  max-width: 950px;
+  min-width: 950px;
 }
+@media (min-width: 1200px) {
+  table {
+    width: 1100px;
+    font-size: 1.3rem;
+  }
+}
+
 th,
 td {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 5px 8px;
 }
 #update-stock-table tr:nth-child(2n) {
@@ -59,7 +66,9 @@ td {
   color: #2300ff;
 }
 #update-button {
-  height: 30px;
+  margin-top: 20px;
+  width: 900px;
+  height: 45px;
   padding: 5px 90px;
   color: #ffffff;
   background-color: #2300ff;
@@ -72,8 +81,13 @@ td {
   justify-content: space-evenly;
 }
 
+#import-export {
+  text-align: right;
+}
+
 a {
   color: #2300ff;
   text-decoration: none;
   margin-right: 10px;
+  text-align: right;
 }

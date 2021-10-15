@@ -1,115 +1,135 @@
 <!-- 最後に消す -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/all.css" />
-    <link rel="stylesheet" href="./styles/common.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- ログアウト -->
-    <div class="popup popup_question" id="logout_popup">
-      <section>
-        <p>ログアウトしますか？</p>
-        <div>
-          <button>OK</button>
-          <button>戻る</button>
-        </div>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
 
-    <!-- インポート -->
-    <div class="popup popup_question" id="import_popup">
-      <section>
-        <p>インポートしますか？</p>
-        <div>
-          <button>OK</button>
-          <button>戻る</button>
-        </div>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/all.css" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <title>Document</title>
+</head>
 
-    <div class="popup popup_message" id="import_success_popup">
-      <p>インポートが成功しました。</p>
+<body>
+  <!-- ログアウト -->
+  <div class="popup popup_question" id="logout_popup">
+    <section>
+      <p>ログアウトしますか？</p>
+      <div>
+        <button>OK</button>
+        <button>戻る</button>
+      </div>
+    </section>
+    <section>
       <i class="fas fa-times"></i>
-    </div>
+    </section>
+  </div>
 
-    <!-- エクスポート -->
-    <div class="popup popup_question" id="export_popup">
-      <section>
-        <p>エクスポートしますか？</p>
-        <div>
-          <button>OK</button>
-          <button>戻る</button>
-        </div>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
-
-    <div class="popup popup_message" id="export_success_popup">
-      <p>エクスポートが成功しました。</p>
+  <!-- ログアウト済み -->
+  <div class="popup popup_register" id="logout_success_popup">
+    <section>
+      <p>ログアウト済みとなります。<br />
+        再度利用する場合にはメールアドレスID/パスワードを入力してログインをしてください。<br />
+        ご利用ありがとうございました。</p>
+    </section>
+    <section>
       <i class="fas fa-times"></i>
-    </div>
+    </section>
+  </div>
 
-    <!-- 在庫検索失敗 -->
-    <div class="popup" id="search_stock_fail_popup">
-      <section>
-        <p>
-          大変申し訳ありません。在庫品がありませんでした。<br />
-          当社のDEVICE事業で見積確認させて頂きますので<br />
-          部品見積依頼をお願いします。
-        </p>
-        <button onclick="location.href='./pages/estimate_parts.html'">部品見積依頼へ　<i class="far fa-envelope"></i></button>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
-
-    <!-- ユーザー仮登録完了 -->
-    <div class="popup popup_register" id="buyer_registration_success_popup">
-      <section>
-        <p>バイヤーユーザー仮登録完了</p>
-        <p>
-          バイヤーユーザー登録情報が送信されました。<br />
-          審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
-          メールに記載されているURLをクリックして、本登録を完了させてください。
-        </p>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
-
-    <div class="popup popup_register" id="supplier_registration_success_popup">
-      <section>
-        <p>サプライヤーユーザー仮登録完了</p>
-        <p>
-          サプライヤーユーザー登録情報が送信されました。<br />
-          審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
-          メールに記載されているURLをクリックして、本登録を完了させてください。
-        </p>
-      </section>
-      <section>
-        <i class="fas fa-times"></i>
-      </section>
-    </div>
-
-    <!-- 退会 -->
-    <div class="popup popup_message" id="withdraw_success_popup">
-      <p>退会手続きが完了いたしました。</p>
+  <!-- インポート -->
+  <div class="popup popup_question" id="import_popup">
+    <section>
+      <p>インポートしますか？</p>
+      <div>
+        <button>OK</button>
+        <button>戻る</button>
+      </div>
+    </section>
+    <section>
       <i class="fas fa-times"></i>
-    </div>
-  </body>
+    </section>
+  </div>
+
+  <div class="popup popup_message" id="import_success_popup">
+    <p>インポートが成功しました。</p>
+    <i class="fas fa-times"></i>
+  </div>
+
+  <!-- エクスポート -->
+  <div class="popup popup_question" id="export_popup">
+    <section>
+      <p>エクスポートしますか？</p>
+      <div>
+        <button>OK</button>
+        <button>戻る</button>
+      </div>
+    </section>
+    <section>
+      <i class="fas fa-times"></i>
+    </section>
+  </div>
+
+  <div class="popup popup_message" id="export_success_popup">
+    <p>エクスポートが成功しました。</p>
+    <i class="fas fa-times"></i>
+  </div>
+
+  <!-- 在庫検索失敗 -->
+  <div class="popup" id="search_stock_fail_popup">
+    <section>
+      <p>
+        大変申し訳ありません。在庫品がありませんでした。<br />
+        当社のDEVICE事業で見積確認させて頂きますので<br />
+        部品見積依頼をお願いします。
+      </p>
+      <button onclick="location.href='./pages/estimate_parts.html'">部品見積依頼へ　<i class="far fa-envelope"></i></button>
+    </section>
+    <section>
+      <i class="fas fa-times"></i>
+    </section>
+  </div>
+
+  <!-- ユーザー仮登録完了 -->
+  <div class="popup popup_register" id="buyer_registration_success_popup">
+    <section>
+      <p>バイヤーユーザー仮登録完了</p>
+      <p>
+        バイヤーユーザー登録情報が送信されました。<br />
+        審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
+        メールに記載されているURLをクリックして、本登録を完了させてください。
+      </p>
+    </section>
+    <section>
+      <i class="fas fa-times"></i>
+    </section>
+  </div>
+
+  <div class="popup popup_register" id="supplier_registration_success_popup">
+    <section>
+      <p>サプライヤーユーザー仮登録完了</p>
+      <p>
+        サプライヤーユーザー登録情報が送信されました。<br />
+        審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
+        メールに記載されているURLをクリックして、本登録を完了させてください。
+      </p>
+    </section>
+    <section>
+      <i class="fas fa-times"></i>
+    </section>
+  </div>
+
+  <!-- 退会 -->
+  <div class="popup popup_register" id="withdraw_success_popup">
+    <section>
+      <p>アカウントの退会手続きが完了しました。<br />
+        これまでご利用ありがとうございました。</p>
+    </section>
+    <section>
+      <i class="fas fa-times"></i>
+    </section>
+  </div>
+</body>
+
 </html>

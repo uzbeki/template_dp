@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在庫部品登録</title>
+    <title>電子部品・半導体在庫登録</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/all.css">
     <link rel="stylesheet" href="../styles/update_stock.css">
@@ -14,7 +14,7 @@
 <body>
     <main>
         <div class="titel-bg">
-            <h1>在庫部品登録</h1>
+            <h1>電子部品・半導体在庫登録</h1>
         </div>
         <div class="table-top">
             <section class="sort-box">
@@ -32,6 +32,7 @@
         <table id="update-stock-table">
             <tr>
                 <th>No.</th>
+                <th>削除</th>
                 <th>メーカー</th>
                 <th>品名</th>
                 <th>型式</th>
@@ -42,7 +43,8 @@
                 <th>備考</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td class="number">1</td>
+                <td><input type="checkbox" name=""></td>
                 <td class="text">TOSHIBA</td>
                 <td class="text">フォトカプラ</td>
                 <td class="text">TLP2234</td>
@@ -53,7 +55,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>2</td>
+                <td class="number">2</td>
+                <td><input type="checkbox" name=""></td>
                 <td class="text">TOSHIBA</td>
                 <td class="text">フォトカプラ</td>
                 <td class="text">TLP2234</td>
@@ -64,7 +67,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>3</td>
+                <td class="number">3</td>
+                <td><input type="checkbox" name=""></td>
                 <td class="text">TOSHIBA</td>
                 <td class="text">フォトカプラ</td>
                 <td class="text">TLP2234</td>
@@ -75,7 +79,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>4</td>
+                <td class="number">4</td>
+                <td><input type="checkbox" name=""></td>
                 <td class="text">TOSHIBA</td>
                 <td class="text">フォトカプラ</td>
                 <td class="text">TLP2234</td>
@@ -86,7 +91,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>5</td>
+                <td class="number">5</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -97,7 +103,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>6</td>
+                <td class="number">6</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -108,7 +115,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>7</td>
+                <td class="number">7</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -119,7 +127,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>8</td>
+                <td class="number">8</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -130,7 +139,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>9</td>
+                <td class="number">9</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -141,7 +151,8 @@
                 <td class="text"></td>
             </tr>
             <tr>
-                <td>10</td>
+                <td class="number">10</td>
+                <td></td>
                 <td class="text"></td>
                 <td class="text"></td>
                 <td class="text"></td>
@@ -153,10 +164,12 @@
             </tr>
         </table>
         <div class="table-bottom">
-            <button type="button" id="update-button">登録・更新</button>
             <div id="link-part">
-                <a href="import.html" class="export-link"><i class="fas fa-square-full"></i> インポート</a>
-                <a href="export_data.html" class="import-link"><i class="fas fa-square-full"></i> エクスポート</a>
+                <section id="import-export">
+                    <a href="import.html" class="export-link"><i class="fas fa-square-full"></i> インポート</a>
+                    <a href="export_data.html" class="import-link"><i class="fas fa-square-full"></i> エクスポート</a>
+                </section>
+                <button type="button" id="update-button">登録・更新</button>
             </div>
         </div>
     </main>
