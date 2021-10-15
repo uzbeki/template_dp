@@ -1,15 +1,8 @@
-main {
-  margin: 0 12%;
-}
-body {
-  margin-top: 50px;
-}
-
 .privacy-policy-text {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  margin: 0 15%;
+  padding: 0 10%;
+  
 }
 .privacy-policy-text p {
   font-size: 1rem;
@@ -49,8 +42,4 @@ body {
   margin-bottom: 10px;
   text-align: right;
 }
-#privacy-policy-text {
-  margin: 0;
-  display: inline-block;
-  text-align: left;
-}
+

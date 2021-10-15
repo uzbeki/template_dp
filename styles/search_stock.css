@@ -67,3 +67,15 @@ th {
 .fa-envelope {
   color: #000000;
 }
+.table-bottom p {
+  margin: 20px 0;
+}
+#estimate-button {
+  width: 900px;
+  height: 45px;
+  padding: 5px 45px;
+  color: #ffffff;
+  background-color: #2300ff;
+  border: none;
+  border-radius: 5px;
+}
