@@ -1,13 +1,11 @@
-main {
-  align-items: center;
+#user-guide-content {
+  margin: 0 10%;
 }
-
 div {
   display: flex;
 }
 
 ul {
-  padding-left: 100px;
   list-style-type: square;
   color: #2300ff;
 }
