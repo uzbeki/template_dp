@@ -455,6 +455,12 @@ footer li {
   width: 100%;
 }
 
+/********** logout_success **********/
+#logout_success_popup {
+  width: 1100px;
+  height: 200px;
+  font-size: 24px;
+}
 /********** registration **********/
 .popup_register {
   width: 1000px;
