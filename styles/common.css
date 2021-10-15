@@ -556,6 +556,10 @@ footer li {
   max-width: calc(100% - 150px);
 }
 
+.form_info p {
+  text-align: left;
+}
+
 .entry_box {
   display: flex;
   flex-direction: column;
@@ -591,6 +595,10 @@ label small {
 
 .entry_box textarea {
   height: 150px;
+}
+
+.file_box input{
+  border: none;
 }
 
 .check_box {
