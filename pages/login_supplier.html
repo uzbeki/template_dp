@@ -19,13 +19,15 @@
 			<button class="selected">サプライヤー</button>
 		</section>
 		<form action="" class="entry_form">
+			<input type="hidden" name="user_type" value="supplier" />
 			<div class="entry_box mail_box">
 				<label for="mail">メールアドレス</label>
-				<input type="email" name="mail" id="mail" autocomplete="email" required autofocus/>
+				<input type="email" name="mail" id="mail" autocomplete="email" required autofocus />
 			</div>
 			<div class="entry_box password_box">
 				<label for="password">パスワード</label>
-				<input type="password" name="password" id="password" autocomplete="current-password" required minlength="8"/>
+				<input type="password" name="password" id="password" autocomplete="current-password" required
+					minlength="8" />
 			</div>
 			<section class="form_info login_form_footer">
 				<section>
