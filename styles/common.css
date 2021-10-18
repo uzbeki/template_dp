@@ -637,9 +637,9 @@ label small {
 }
 
 @media (max-width: 1200px) {
-  .page_title h1 {
+  /* .page_title h1 {
     font-size: 32px;
-  }
+  } */
 
   .form_info {
     width: 700px;
