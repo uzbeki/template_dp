@@ -8,14 +8,11 @@
 ul {
   list-style: none;
   text-align: left;
+}
+#terms-text .for-margin {
   margin-bottom: 15px;
 }
-#terms-text p {
-  font-size: 1rem;
-}
 #terms-text h2,
-#terms-text h3,
-#terms-text h4,
 #terms-text p {
   font-size: 1rem;
   text-align: left;
