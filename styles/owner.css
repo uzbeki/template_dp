@@ -8,6 +8,7 @@ main {
 #owner-table th {
   padding-right: 60px;
   text-align: left;
+  font-weight: normal;
 }
 #owner-table td {
   text-align: left;
