@@ -5,9 +5,9 @@ div {
   display: flex;
 }
 
-ul {
-  list-style-type: square;
+ol {
   color: #2300ff;
+  font-size: 24px;
 }
 
 li {
@@ -17,6 +17,7 @@ li {
 
 p {
   color: black;
+  font-size: 16px;
 }
 
 p:first-of-type {
