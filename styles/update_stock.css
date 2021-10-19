@@ -47,12 +47,14 @@ table {
   table {
     width: 1200px;
   }
+  #add-btn-part {
+    margin: 10px 120px;
+  }
 }
 @media (min-width: 1440px) {
   table {
     width: 1400px;
     font-size: 1.5rem;
-  }
 }
 th,
 td {
@@ -90,7 +92,22 @@ td {
   display: flex;
   justify-content: space-evenly;
 }
+#add-btn-part {
+  text-align: right;
+  margin: 10px 50px;
+}
+#add-btn {
+  border: solid 1px #2300ff;
+  color: #2300ff;
+  padding: 2px 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
 
+}
+.fa-plus {
+  color: #2300ff;
+  width: 100;
+}
 #import-export {
   text-align: right;
 }
