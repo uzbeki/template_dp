@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <script src="../js/dropdown.js" defer></script>
+    <title>login_supplier</title>
+  </head>
 
+<<<<<<< HEAD
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,3 +56,58 @@
 </body>
 
 </html>
+=======
+  <body>
+    <main>
+      <section class="page_info">
+        <button onclick="location.href='./login_buyer.html'">バイヤー</button>
+        <button class="selected">サプライヤー</button>
+      </section>
+      <form action="" class="entry_form">
+        <div class="entry_box mail_box">
+          <label for="mail">メールアドレスID</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            autocomplete="email"
+            required
+            autofocus
+          />
+        </div>
+        <div class="entry_box password_box">
+          <label for="password">パスワード</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="current-password"
+            required
+            minlength="8"
+          />
+        </div>
+        <section class="form_info login_form_footer">
+          <section>
+            <div class="check_box">
+              <input type="checkbox" id="checkbox1" />
+              <label for="checkbox1">ログイン情報を保存</label>
+            </div>
+            <p>
+              パスワードを忘れた方は<a href="update_supplier_info.html"
+                >こちら</a
+              >
+            </p>
+          </section>
+          <section>
+            <button type="submit" class="button">ログイン</button>
+          </section>
+          <p>
+            ユーザー登録がまだの方は<a href="register_supplier.html">こちら</a
+            >から
+          </p>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
+>>>>>>> d3633ec97b5d65bb06d31934d10d30fc022bc2bd

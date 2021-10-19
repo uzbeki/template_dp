@@ -249,14 +249,14 @@ header button.header_button a {
 .dropdown > button.dropdown_link:active {
   color: black;
 }
-.dropdown button.dropdown_link div {
-  /* display: flex; */
-}
+/* .dropdown button.dropdown_link div {
+  display: flex;
+} */
 .dropdown button.dropdown_link div h3 {
   margin: 0.1rem 0;
 }
-.dropdown button.dropdown_link div p {
-}
+/* .dropdown button.dropdown_link div p {
+} */
 .dropdown .dropdown_content {
   position: absolute;
   background-color: var(--primary-color);
@@ -500,6 +500,12 @@ footer li {
   height: 100px;
 }
 
+/********** update_stock_success **********/
+#update_stock_success_popup {
+  width: 400px;
+}
+
+
 /********** forms **********/
 .titel-bg,
 .page_info,
@@ -556,6 +562,10 @@ footer li {
   max-width: calc(100% - 150px);
 }
 
+.form_info p {
+  text-align: left;
+}
+
 .entry_box {
   display: flex;
   flex-direction: column;
@@ -593,6 +603,10 @@ label small {
   height: 150px;
 }
 
+.file_box input{
+  border: none;
+}
+
 .check_box {
   display: flex;
   gap: 10px;
@@ -623,9 +637,9 @@ label small {
 }
 
 @media (max-width: 1200px) {
-  .page_title h1 {
+  /* .page_title h1 {
     font-size: 32px;
-  }
+  } */
 
   .form_info {
     width: 700px;
