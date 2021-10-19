@@ -19,6 +19,21 @@ body {
 table {
   max-width: 1000px;
 }
+@media (min-width: 1200px) {
+  table {
+    width: 1100px;
+  }
+}
+@media (min-width: 1300px) {
+  table {
+    width: 1200px;
+  }
+}
+@media (min-width: 1440px) {
+  table {
+    width: 1400px;
+  }
+}
 .text {
   text-align: left;
 }
