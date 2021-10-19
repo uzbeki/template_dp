@@ -348,7 +348,7 @@ footer li {
   color: var(--primary-color);
 }
 
-footer li:hover {
+footer li:hover::marker {
   color: #00fff9;
 }
 
