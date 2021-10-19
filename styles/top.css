@@ -98,11 +98,12 @@ header .search_area {
   background-repeat: no-repeat;
   background-position: center;
   /* position: absolute; */
-  top: 450px;
-  right: 400px;
+  /* top: 450px;
+  right: 400px; */
 }
 
 .top_img div {
+  background-color: rgba(255, 255, 255, 0.4);
   background-image: radial-gradient(ellipse, transparent 45%, white 72%);
   width: 400px;
   height: 300px;
