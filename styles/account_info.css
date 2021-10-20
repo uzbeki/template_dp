@@ -2,6 +2,9 @@
     padding-left: var(--content-start);
     padding-right: var(--content-start);
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .sub_section {
@@ -28,10 +31,41 @@ label {
 .buttons {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
 button {
     font-size: 24px;
+    font-weight: bold;
     width: 400px;
     height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.button_bottom {
+    width: 200px;
+}
+
+@media(max-width:1700px) {
+    .sub_section div {
+        font-size: 24px;
+        gap: 30px;
+    }
+
+    .account_info {
+        gap: 20px;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+}
+
+@media(max-width:1440px) {
+    .sub_section div {
+        font-size: 16px;
+    }
 }
