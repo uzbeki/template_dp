@@ -34,10 +34,6 @@ body {
 .number {
   text-align: right;
 }
-table {
-  min-width: 950px;
-}
-
 @media (min-width: 1200px) {
   table {
     width: 1100px;
@@ -55,7 +51,12 @@ table {
   table {
     width: 1400px;
     font-size: 1.5rem;
+  }
 }
+table {
+  min-width: 1000px;
+}
+
 th,
 td {
   font-size: 1.2rem;
@@ -102,7 +103,6 @@ td {
   padding: 2px 15px;
   border-radius: 5px;
   background-color: #ffffff;
-
 }
 .fa-plus {
   color: #2300ff;
@@ -112,7 +112,7 @@ td {
   text-align: right;
 }
 
-a {
+#table-bottom a {
   color: #2300ff;
   text-decoration: none;
   margin-right: 10px;
