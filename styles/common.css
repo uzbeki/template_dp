@@ -5,13 +5,10 @@ body {
 	justify-content: space-between;
 	text-align: center;
 
-	--border-radius: 5px;
-	--primary-color: #2300ff;
-	--content-start: 10vw;
-}
-a {
-	text-decoration: none;
-	color: inherit;
+  --border-radius: 5px;
+  --primary-color: #2300ff;
+  --content-start: 15vw;
+  --content-start-small: 10vw
 }
 
 body,
@@ -515,23 +512,26 @@ footer li {
 .titel-bg,
 .page_info,
 .entry_form {
-	padding-left: var(--content-start);
+  padding-left: var(--content-start);
+  padding-right: var(--content-start);
 }
 
 @media (max-width: 1440px) {
-	.titel-bg,
-	.page_info,
-	.entry_form {
-		padding-left: var(--content-start);
-	}
+  .titel-bg,
+  .page_info,
+  .entry_form {
+    padding-left: var(--content-start);
+    padding-right: var(--content-start);
+  }
 }
 
 @media (max-width: 1024px) {
-	.titel-bg,
-	.page_info,
-	.entry_form {
-		padding-left: var(--content-start);
-	}
+  .titel-bg,
+  .page_info,
+  .entry_form {
+    padding-left: var(--content-start-small);
+    padding-right: var(--content-start-small);
+  }
 }
 
 .page_title {
@@ -559,12 +559,12 @@ footer li {
 }
 
 .form_info {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	gap: 20px;
-	width: 900px;
-	max-width: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  /* max-width: calc(100% - 150px); */
 }
 
 .form_info p {
@@ -572,10 +572,10 @@ footer li {
 }
 
 .entry_box {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .entry_box label {
