@@ -8,7 +8,7 @@ main {
 
 header {
 	box-sizing: border-box;
-	padding-right: 200px;
+	padding-right: var(--content-start);
 	justify-content: right;
 }
 
@@ -91,7 +91,7 @@ header .search_area {
 
 .search_bar input {
 	padding-right: 5px;
-	width: 700px;
+	width: 600px;
 	height: 50px;
 	outline: var(--primary-color);
 }
@@ -142,10 +142,11 @@ header .search_area {
 		width: 500px;
 		height: 50px;
 	}
+
+	header .header_menu {
+		gap: 50px;
+	}
 }
 
 @media (max-width: 1200px) {
-	.top_img {
-		display: none;
-	}
 }
