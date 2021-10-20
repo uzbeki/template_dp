@@ -1,138 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/register.css" />
-    <script src="../js/dropdown.js" defer></script>
-    <title>register_supplier</title>
-  </head>
 
-  <body>
-    <main>
-      <section class="page_title">
-        <div class="titel-bg">
-          <h1>サプライヤーユーザー登録</h1>
-        </div>
-      </section>
-      <form action="" class="entry_form">
-        <legend>
-          サプライヤーユーザー登録をいただきありがとうございます。サプライヤーユーザー登録いただきました内容は、弊社の掲げる個人情報保護方針に沿って管理し、お客様の同意なく第三者に開示・提供することはございません。詳細につきましては、当サイトの「プライバシーポリシー」をご参照ください。サプライヤーユーザー登録をした場合には審査及び承認後電子部品・半導体在庫登録、更新ができます。
-        </legend>
-        <div class="entry_box name_box">
-          <label for="name">お名前<small>（必須）</small></label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            autocomplete="name"
-            required
-            autofocus
-          />
-        </div>
-        <div class="entry_box furigana_box">
-          <label for="furigana">ふりがな<small>（必須）</small></label>
-          <input type="text" name="furigana" id="furigana" required />
-        </div>
-        <div class="entry_box mail_box">
-          <label for="mail">メールアドレス<small>（必須）</small></label>
-          <input
-            type="email"
-            name="mail"
-            id="mail"
-            autocomplete="email"
-            required
-          />
-        </div>
-        <div class="entry_box password_box">
-          <label for="password">パスワード<small>（必須）</small></label>
-          <input
-            type="password"
-            minlength="8"
-            autocomplete="new-password"
-            name="password"
-            id="password"
-            required
-          />
-        </div>
-        <div class="entry_box repassword_box">
-          <label for="repassword"
-            >パスワード再入力<small>（必須）</small></label
-          >
-          <input
-            type="password"
-            minlength="8"
-            autocomplete="new-password"
-            name="repassword"
-            id="repassword"
-            required
-          />
-        </div>
-        <div class="entry_box company_box">
-          <label for="company">御社名<small>（必須）</small></label>
-          <input
-            type="text"
-            name="company"
-            id="company"
-            autocomplete="organization-title"
-            required
-          />
-        </div>
-        <div class="entry_box postalcode_box">
-          <label for="postalcode">郵便番号<small>（必須）</small></label>
-          <input
-            type="text"
-            name="postalcode"
-            id="postalcode"
-            pattern="\d{3}-?\d{4}"
-            autocomplete="postal-code"
-            required
-          />
-        </div>
-        <div class="entry_box address_box">
-          <label for="address">住所<small>（必須）</small></label>
-          <input
-            type="text"
-            name="address"
-            id="address"
-            autocomplete="street-address"
-            required
-          />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/all.css" />
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/register.css" />
+  <script src="../js/dropdown.js" defer></script>
+  <title>register_supplier</title>
+</head>
 
-        <div class="entry_box phone_box">
-          <label for="phone">電話番号<small>（必須）</small></label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            autocomplete="tel-local"
-            required
-          />
-        </div>
-        <div class="entry_box fax_box">
-          <label for="fax">FAX番号<small>（任意）</small></label>
-          <input type="tel" name="fax" id="fax" autocomplete="fax" />
-        </div>
-        <div class="entry_box homepage_box">
-          <label for="homepage"
-            >URL<small>（必須）ない場合にはなしと記入ください。</small></label
-          >
-          <input
-            type="url"
-            name="homepage"
-            id="homepage"
-            autocomplete="url"
-            required
-          />
-        </div>
+<body>
+  <main>
+    <section class="page_title">
+      <div class="titel-bg">
+        <h1>サプライヤーユーザー登録</h1>
+      </div>
+    </section>
+    <form action="" class="entry_form">
+      <legend>
+        サプライヤーユーザー登録をいただきありがとうございます。サプライヤーユーザー登録いただきました内容は、弊社の掲げる個人情報保護方針に沿って管理し、お客様の同意なく第三者に開示・提供することはございません。詳細につきましては、当サイトの「プライバシーポリシー」をご参照ください。サプライヤーユーザー登録をした場合には審査及び承認後電子部品・半導体在庫登録、更新ができます。
+      </legend>
+      <div class="entry_box name_box">
+        <label for="name">お名前<small>（必須）</small></label>
+        <input type="text" name="name" id="name" autocomplete="name" required autofocus />
+      </div>
+      <div class="entry_box furigana_box">
+        <label for="furigana">ふりがな<small>（必須）</small></label>
+        <input type="text" name="furigana" id="furigana" required />
+      </div>
+      <div class="entry_box mail_box">
+        <label for="mail">メールアドレス<small>（必須）</small></label>
+        <input type="email" name="mail" id="mail" autocomplete="email" required />
+      </div>
+      <div class="entry_box password_box">
+        <label for="password">パスワード<small>（必須）</small></label>
+        <input type="password" minlength="8" autocomplete="new-password" name="password" id="password" required />
+      </div>
+      <div class="entry_box repassword_box">
+        <label for="repassword">パスワード再入力<small>（必須）</small></label>
+        <input type="password" minlength="8" autocomplete="new-password" name="repassword" id="repassword" required />
+      </div>
+      <div class="entry_box company_box">
+        <label for="company">御社名<small>（必須）</small></label>
+        <input type="text" name="company" id="company" autocomplete="organization-title" required />
+      </div>
+      <div class="entry_box postalcode_box">
+        <label for="postalcode">郵便番号<small>（必須）</small></label>
+        <input type="text" name="postalcode" id="postalcode" pattern="\d{3}-?\d{4}" autocomplete="postal-code"
+          required />
+      </div>
+      <div class="entry_box address_box">
+        <label for="address">住所<small>（必須）</small></label>
+        <input type="text" name="address" id="address" autocomplete="street-address" required />
+      </div>
 
-        <div class="entry_box text_box">
-          <label for="business">事業内容<small>（必須）</small></label>
-          <textarea name="business" id="business" cols="30" rows="10">
+      <div class="entry_box phone_box">
+        <label for="phone">電話番号<small>（必須）</small></label>
+        <input type="tel" name="phone" id="phone" autocomplete="tel-local" required />
+      </div>
+      <div class="entry_box fax_box">
+        <label for="fax">FAX番号<small>（任意）</small></label>
+        <input type="tel" name="fax" id="fax" autocomplete="fax" />
+      </div>
+      <div class="entry_box homepage_box">
+        <label for="homepage">URL<small>（必須）ない場合にはなしと記入ください。</small></label>
+        <input type="url" name="homepage" id="homepage" autocomplete="url" required />
+      </div>
+
+      <div class="entry_box text_box">
+        <label for="business">事業内容<small>（必須）</small></label>
+        <textarea name="business" id="business" cols="30" rows="10">
 </textarea required>
       </div>
       <div class="entry_box date_box">
@@ -153,35 +93,122 @@
       </div>
       <div class="entry_box text_box">
         <label for="terms">利用規約</label>
-        <textarea name="terms" id="terms" cols="30" rows="10" readonly></textarea
-          >
+        <textarea name="terms" id="terms" cols="30" rows="10" readonly>
+この利用規約（以下，「本規約」といいます。）は，DEVICE PARTNERS株式会社（以下，「当社」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。
+
+第1条（適用）
+本規約は，ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。
+当社は本サービスに関し，本規約のほか，ご利用にあたってのルール等，各種の定め（以下，「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず，本規約の一部を構成するものとします。本規約の規定が前条の個別規定の規定と矛盾する場合には，個別規定において特段の定めなき限り，個別規定の規定が優先されるものとします。
+
+第2条（利用登録）
+本サービスにおいては，登録希望者が本規約に同意の上，当社の定める方法によって利用登録を申請し，当社がこれを承認することによって，利用登録が完了するものとします。
+当社は，利用登録の申請者に以下の事由があると判断した場合，利用登録の申請を承認しないことがあり，その理由については一切の開示義務を負わないものとします。
+
+利用登録の申請に際して虚偽の事項を届け出た場合
+本規約に違反したことがある者からの申請である場合
+その他，当社が利用登録を相当でないと判断した場合
+第3条（ユーザーIDおよびパスワードの管理）
+ユーザーは，自己の責任において，本サービスのユーザーIDおよびパスワードを適切に管理するものとします。 ユーザーは，いかなる場合にも，ユーザーIDおよびパスワードを第三者に譲渡または貸与し，もしくは第三者と共用することはできません。当社は，ユーザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には，そのユーザーIDを登録しているユーザー自身による利用とみなします。 ユーザーID及びパスワードが第三者によって使用されたことによって生じた損害は，当社に故意又は重大な過失がある場合を除き 当社は一切の責任を負わないものとします。
+
+第4条（電子部品・半導体在庫登録）
+ユーザーは、本サービスの内容を十分に理解し、サプライヤー在庫登録は電子部品・半導体自社在庫品のみとし、詳細情報登録するものとします。 ユーザーは、サプライヤー在庫登録情報に変更あった場合に数量、削除等迅速に変更、更新するものとします。 電子部品・半導体以外にもハウジング、コンタクト、モジュール、スイッチ等電子機器製品に必要な部品の登録できます。 会社名、郵便番号、住所、電話番号、FAX番号、URL、メールアドレス、代表者名等の会社情報を一切記入及び登録しないこととします。
+
+第5条（流通在庫納入保証）
+不具合品のみ交換可能な製品が有る場合は交換対応とします。 交換可能な製品が無い場合は代金と同等額を返金とします。 不具合解析は流通在庫の基本不可ととします。 弊社にて納入した部品に関して派生した損害等の賠償は上記内容以外、一切お受けする事が出来ませんので予めご了承下さい。
+
+第6条（キャンセル・返品）
+注文の確定後は、商品の変更、数量の変更、および注文キャンセル（取消・撤回）は、特別な場合を除き、できないものとします。 万一、当社が納入した商品に数量不足、品違いまたは外形的に明らかな異常（破損・さび等）があり、これを当社が認めた場合には、商品到着後5日以内に当社に通知があった場合に限り、当社の選択により、不足品の追加、商品の返品または交換をお受けするものとします。 なお、事前の連絡がない場合には、返品または交換をお断りする場合もございます。海外へ転売された商品の返品はお断りいたします。 前項の場合の返品および交換は、ユーザーが当社に発注した注文品であって、かつ、未使用の状態の商品のみに限るものとします。 返品または交換に際しての送料は当社の負担となります。当該商品を着払いでお送りください。
+
+第7条（禁止事項）
+ユーザーは，本サービスの利用にあたり，以下の行為をしてはなりません。
+法令または公序良俗に違反する行為
+犯罪行為に関連する行為
+本サービスの内容等，本サービスに含まれる著作権，商標権ほか知的財産権を侵害する行為
+当社，ほかのユーザー，またはその他第三者のサーバーまたはネットワークの機能を破壊したり，妨害したりする行為
+本サービスによって得られた情報を商業的に利用する行為
+当社のサービスの運営を妨害するおそれのある行為
+不正アクセスをし，またはこれを試みる行為
+他のユーザーに関する個人情報等を収集または蓄積する行為
+不正な目的を持って本サービスを利用する行為
+本サービスの他のユーザーまたはその他の第三者に不利益，損害，不快感を与える行為
+他のユーザーに成りすます行為
+当社が許諾しない本サービス上での宣伝，広告，勧誘，または営業行為
+面識のない異性との出会いを目的とした行為
+当社のサービスに関連して，反社会的勢力に対して直接または間接に利益を供与する行為
+その他，当社が不適切と判断する行為
+第8条（本サービスの提供の停止等）
+当社は，以下のいずれかの事由があると判断した場合，ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
+
+本サービスにかかるコンピュータシステムの保守点検または更新を行う場合
+地震，落雷，火災，停電または天災などの不可抗力により，本サービスの提供が困難となった場合
+コンピュータまたは通信回線等が事故により停止した場合
+その他，当社が本サービスの提供が困難と判断した場合
+当社は，本サービスの提供の停止または中断により，ユーザーまたは第三者が被ったいかなる不利益または損害についても，一切の責任を負わないものとします。
+
+第9条（利用制限および登録抹消）
+当社は，ユーザーが以下のいずれかに該当する場合には，事前の通知なく，ユーザーに対して，本サービスの全部もしくは一部の利用を制限し，またはユーザーとしての登録を抹消することができるものとします。
+
+本規約のいずれかの条項に違反した場合
+登録事項に虚偽の事実があることが判明した場合
+料金等の支払債務の不履行があった場合
+当社からの連絡に対し，一定期間返答がない場合
+本サービスについて，最終の利用から一定期間利用がない場合
+その他，当社が本サービスの利用を適当でないと判断した場合
+当社は，本条に基づき当社が行った行為によりユーザーに生じた損害について，一切の責任を負いません。
+
+第10条（退会）
+ユーザーは，当社の定める退会手続により，本サービスから退会できるものとします。
+
+第11条（保証の否認および免責事項）
+当社は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。
+当社は、本サービスに起因してユーザーに生じたあらゆる損害について一切の責任を負いません。ただし，本サービスに関する当社とユーザーとの間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。
+前項ただし書に定める場合であっても、当社は、当社の過失（重過失を除きます。）による債務不履行または不法行によりユーザーにに生じた損害のうち特別な事情から生じた損害（当社またはユーザーが損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。
+当社は、本サービスに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について一切責任を負いません。
+
+第12条（サービス内容の変更等）
+当社は，ユーザーに通知することなく，本サービスの内容を変更しまたは本サービスの提供を中止することができるものとし，これによってユーザーに生じた損害について一切の責任を負いません。
+
+第13条（利用規約の変更）
+当社は，必要と判断した場合には，ユーザーに通知することなくいつでも本規約を変更することができるものとします。なお，本規約の変更後，本サービスの利用を開始した場合には，当該ユーザーは変更後の規約に同意したものとみなします。
+
+第14条（個人情報の取扱い）
+当社は，本サービスの利用によって取得する個人情報については，当社「プライバシーポリシー」に従い適切に取り扱うものとします。
+
+第15条（通知または連絡）
+ユーザーと当社との間の通知または連絡は，当社の定める方法によって行うものとします。当社は,ユーザーから,当社が別途定める方式に従った変更届け出がない限り,現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い,これらは,発信時にユーザーへ到達したものとみなします。
+
+第16条（権利義務の譲渡の禁止）
+ユーザーは，当社の書面による事前の承諾なく，利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し，または担にユーザーへ到達したものとみなします。
+
+第17条（準拠法・裁判管轄）
+本規約の解釈にあたっては，日本法を準拠法とします。 本サービスに関して紛争が生じた場合には，当社の本店所在地を管轄する裁判所を専属的合意管轄とします。
+        </textarea>
+      </div>
+      <section class="form_info">
+        <div class="check_box">
+          <input type="checkbox" id="checkbox1" required />
+          <label for="checkbox1">利用規約に同意する</label>
         </div>
-        <section class="form_info">
-          <div class="check_box">
-            <input type="checkbox" id="checkbox1" required />
-            <label for="checkbox1">利用規約に同意する</label>
-          </div>
-          <div class="check_box">
-            <input type="checkbox" id="checkbox3" />
-            <label for="checkbox3">
-              DEVICE PARTNER　- SEARCH SERVICE PLATFORM
-              -のサイト品質向上のため､<br />在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。
-            </label>
-          </div>
-          <div class="check_box">
-            <input type="checkbox" id="checkbox2" required />
-            <label for="checkbox2">
-              確認画面は表示されません。上記内容にて送信しますがよろしいですか？<small
-                >（必須）</small
-              >
-            </label>
-          </div>
-          <p>
-            ※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。
-          </p>
-          <section><button type="submit" class="button">送信</button></section>
-        </section>
-      </form>
-    </main>
-  </body>
+        <div class="check_box">
+          <input type="checkbox" id="checkbox3" />
+          <label for="checkbox3">
+            DEVICE PARTNER　- SEARCH SERVICE PLATFORM
+            -のサイト品質向上のため､<br />在庫管理数量登録更新及び御見積回答は迅速に行うことを規約します。
+          </label>
+        </div>
+        <div class="check_box">
+          <input type="checkbox" id="checkbox2" required />
+          <label for="checkbox2">
+            確認画面は表示されません。上記内容にて送信しますがよろしいですか？<small>（必須）</small>
+          </label>
+        </div>
+        <p>
+          ※運営会社DEVCIE PARTNERS株式会社での審査及び承認が必要となります。
+        </p>
+        <section><button type="submit" class="button">送信</button></section>
+      </section>
+    </form>
+  </main>
+</body>
+
 </html>
