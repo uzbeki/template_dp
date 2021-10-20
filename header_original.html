@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
   <link rel="stylesheet" href="./styles/common.css" />
   <script src="./js/dropdown.js" defer></script>
-  <title>Document</title>
+  <title>Header</title>
 </head>
 
 <body>
@@ -31,13 +31,20 @@
     </section>
     <section class="header_menu">
       <nav>
+        <li class="dropdown" >
+          <button class="dropdown_link" >
+            <a href="./top.html">
+              <h3>ホーム</h3>
+              <p>Home</p>
+            </a>
+          </button>
+        </li>
         <li class="dropdown" data-dropdown>
           <button class="dropdown_link" data-dropdown-button>
             <div>
               <h3>登録</h3>
               <p>Sign up</p>
             </div>
-            <!-- <span><i class="fas fa-chevron-down"></i></span> -->
           </button>
           <ul class="dropdown_content">
             <li><a href="./pages/register_buyer.html">バイヤーユーザー登録</a></li>
@@ -47,23 +54,22 @@
         <li class="dropdown" data-dropdown>
           <button class="dropdown_link" data-dropdown-button>
             <div>
-              <h3>見積依頼</h3>
-              <p>Request</p>
+              <h3>見積・問合せ</h3>
+              <p>Request&Contact</p>
             </div>
-            <!-- <span><i class="fas fa-chevron-down"></i></span> -->
           </button>
           <ul class="dropdown_content">
             <li><a href="./pages/estimate.html">見積依頼</a></li>
             <li><a href="./pages/estimate_parts.html">部品見積依頼</a></li>
+            <li><a href="./pages/contact.html">お問合せ</a></li>
           </ul>
         </li>
         <li class="dropdown" data-dropdown>
           <button class="dropdown_link" data-dropdown-button>
             <div>
               <h3>ガイド</h3>
-              <p>Terms & Guide</p>
+              <p>Terms&Guide</p>
             </div>
-            <!-- <span><i class="fas fa-chevron-down"></i></span> -->
           </button>
           <ul class="dropdown_content">
             <li><a href="./pages/about.html">DEVICE PARTNERSについて</a></li>
@@ -72,20 +78,19 @@
             <li><a href="./pages/privacy_policy.html">プライバシーポリシー</a></li>
           </ul>
         </li>
-        <li class="dropdown" data-dropdown>
+        <!-- <li class="dropdown" data-dropdown>
           <button class="dropdown_link" data-dropdown-button>
             <div>
               <h3>その他</h3>
               <p>Other</p>
             </div>
-            <!-- <span><i class="fas fa-chevron-down"></i></span> -->
           </button>
           <ul class="dropdown_content">
             <li><a href="./pages/contact.html">お問合せ</a></li>
             <li><a href="./pages/owner.html">運営会社</a></li>
             <li><a href="./pages/withdraw.html">退会</a></li>
           </ul>
-        </li>
+        </li> -->
       </nav>
       <button class="header_button" onclick="location.href='./pages/login_buyer.html'">
         <!-- ログイン&nbsp;&nbsp;<i class="fas fa-sign-in-alt"></i> -->
