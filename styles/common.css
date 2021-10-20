@@ -7,7 +7,8 @@ body {
 
   --border-radius: 5px;
   --primary-color: #2300ff;
-  --content-start: 10vw;
+  --content-start: 15vw;
+  --content-start-small: 10vw
 }
 
 body,
@@ -511,6 +512,7 @@ footer li {
 .page_info,
 .entry_form {
   padding-left: var(--content-start);
+  padding-right: var(--content-start);
 }
 
 @media (max-width: 1440px) {
@@ -518,6 +520,7 @@ footer li {
   .page_info,
   .entry_form {
     padding-left: var(--content-start);
+    padding-right: var(--content-start);
   }
 }
 
@@ -525,7 +528,8 @@ footer li {
   .titel-bg,
   .page_info,
   .entry_form {
-    padding-left: var(--content-start);
+    padding-left: var(--content-start-small);
+    padding-right: var(--content-start-small);
   }
 }
 
@@ -558,8 +562,7 @@ footer li {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-  width: 900px;
-  max-width: calc(100% - 150px);
+  width: 100%;
 }
 
 .form_info p {
@@ -570,7 +573,7 @@ footer li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 900px;
+  width: 100%;
 }
 
 .entry_box label {
