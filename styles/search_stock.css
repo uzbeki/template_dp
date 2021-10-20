@@ -16,24 +16,8 @@ body {
 .sort-list {
   cursor: pointer;
 }
-@media (min-width: 1200px) {
-  table {
-    width: 1100px;
-  }
-}
-@media (min-width: 1300px) {
-  table {
-    width: 1200px;
-  }
-}
-@media (min-width: 1440px) {
-  table {
-    width: 1400px;
-    font-size: 1.5rem;
-  }
-}
 table {
-  min-width: 1000px;
+  width: 90%;
 }
 .text {
   text-align: left;
@@ -44,12 +28,7 @@ table {
 th,
 td {
   padding: 5px 20px;
-}
-td {
-  font-size: 1.1rem;
-}
-th {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 #search-stock-table {
   border: 0;
