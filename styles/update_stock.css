@@ -34,27 +34,9 @@ body {
 .number {
   text-align: right;
 }
-@media (min-width: 1200px) {
-  table {
-    width: 1100px;
-  }
-}
-@media (min-width: 1300px) {
-  table {
-    width: 1200px;
-  }
-  #add-btn-part {
-    margin: 10px 120px;
-  }
-}
-@media (min-width: 1440px) {
-  table {
-    width: 1400px;
-    font-size: 1.5rem;
-  }
-}
+
 table {
-  min-width: 1000px;
+  width: 90%;
 }
 
 th,
@@ -75,7 +57,8 @@ td {
   color: #ffffff;
 }
 .fa-caret-left,
-.fa-caret-right {
+.fa-caret-right,
+.fa-square-full {
   color: #2300ff;
 }
 #update-button {
@@ -95,7 +78,7 @@ td {
 }
 #add-btn-part {
   text-align: right;
-  margin: 10px 50px;
+  margin: 10px 5%;
 }
 #add-btn {
   border: solid 1px #2300ff;
@@ -110,9 +93,10 @@ td {
 }
 #import-export {
   text-align: right;
+  margin: 15px 0;
 }
 a {
-  color: #2300ff;
+  color:#000000;
   text-decoration: none;
   margin-right: 10px;
   text-align: right;
