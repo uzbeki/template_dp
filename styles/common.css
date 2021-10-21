@@ -657,3 +657,9 @@ label small {
 		word-break: break-all;
 	}
 }
+
+/* estimate */
+.privacy-policy-link {
+	text-decoration: none;
+	color: #000000;
+}
