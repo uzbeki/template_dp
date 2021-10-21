@@ -96,16 +96,16 @@ td {
   margin: 15px 0;
 }
 a {
-  color:#000000;
+  color: #000000;
   text-decoration: none;
   margin-right: 10px;
   text-align: right;
 }
 input {
   border: none;
-  /* font-size: 1.5rem; */
+  font-size: 1.8rem; 
   background-color: #00000000;
-  /* width: 100%; */
+  width: 80%;
   padding: 2px 15px;
 }
 .num-input {
