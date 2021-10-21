@@ -4,6 +4,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
+	gap: 4em;
 
   --border-radius: 5px;
   --primary-color: #2300ff;
