@@ -14,171 +14,175 @@
 </head>
 
 <body>
-    <div class="popup-triggers">
-        <button id="logout" onclick="displayPopup(0)">ログアウト</button>
-        <button id="logout-success" onclick="displayPopup(1)">ログアウト済み</button>
-        <button id="import" onclick="displayPopup(2)">インポート</button>
-        <button id="import-success" onclick="displayPopup(3)">インポート済み</button>
-        <button id="export" onclick="displayPopup(4)">エクスポート</button>
-        <button id="export-success" onclick="displayPopup(5)">エクスポート済み</button>
-        <button id="search-stock-fail" onclick="displayPopup(6)">在庫なかった</button>
-        <button id="buyer-registration-success" onclick="displayPopup(7)">バイヤーユーザー仮登録完了</button>
-        <button id="supplier-registration-success" onclick="displayPopup(8)">サプライヤーユーザー仮登録完了</button>
-        <button id="withdraw-success" onclick="displayPopup(9)">退会済み</button>
-        <button id="withdraw" onclick="displayPopup(10)">退会</button>
-        <button id="update-stock-success" onclick="displayPopup(11)">電子部品・半導体在庫登録更新済み</button>
-        <button id="delete" onclick="displayPopup(12)">削除</button>
+    <div id="popup-bg">
+        <div class="popup-triggers">
+            <button id="logout" onclick="displayPopup('logout_popup')">ログアウト</button>
+            <button id="logout-success" onclick="displayPopup('logout_success_popup')">ログアウト済み</button>
+            <button id="import" onclick="displayPopup('import_popup')">インポート</button>
+            <button id="import-success" onclick="displayPopup('import_success_popup')">インポート済み</button>
+            <button id="export" onclick="displayPopup('export_popup')">エクスポート</button>
+            <button id="export-success" onclick="displayPopup('export_success_popup')">エクスポート済み</button>
+            <button id="search-stock-fail" onclick="displayPopup('search_stock_fail_popup')">在庫なかった</button>
+            <button id="buyer-registration-success"
+                onclick="displayPopup('buyer_registration_success_popup')">バイヤーユーザー仮登録完了</button>
+            <button id="supplier-registration-success"
+                onclick="displayPopup('supplier_registration_success_popup')">サプライヤーユーザー仮登録完了</button>
+            <button id="withdraw-success" onclick="displayPopup('withdraw_success_popup')">退会済み</button>
+            <button id="withdraw" onclick="displayPopup('withdraw_popup')">退会</button>
+            <button id="update-stock-success"
+                onclick="displayPopup('update_stock_success_popup')">電子部品・半導体在庫登録更新済み</button>
+            <button id="delete" onclick="displayPopup('delete_popup')">削除</button>
 
-    </div>
+        </div>
 
+        <!-- ログアウト -->
+        <div class="popup popup_question" id="logout_popup">
+            <section>
+                <p>ログアウトしますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button>戻る</button>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
 
-    <!-- ログアウト -->
-    <div class="popup popup_question" id="logout_popup">
-        <section>
-            <p>ログアウトしますか？</p>
-            <div>
-                <button>OK</button>
-                <button>戻る</button>
-            </div>
-        </section>
-        <section>
+        <!-- ログアウト済み -->
+        <div class="popup popup_register" id="logout_success_popup">
+            <section>
+                <p>ログアウト済みとなります。<br />
+                    再度利用する場合にはメールアドレスID/パスワードを入力してログインをしてください。<br />
+                    ご利用ありがとうございました。</p>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
+
+        <!-- インポート -->
+        <div class="popup popup_question" id="import_popup">
+            <section>
+                <p>インポートしますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button>戻る</button>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
+
+        <div class="popup popup_message" id="import_success_popup">
+            <p>インポートが成功しました。</p>
             <i class="fas fa-times"></i>
-        </section>
-    </div>
+        </div>
 
-    <!-- ログアウト済み -->
-    <div class="popup popup_register" id="logout_success_popup">
-        <section>
-            <p>ログアウト済みとなります。<br />
-                再度利用する場合にはメールアドレスID/パスワードを入力してログインをしてください。<br />
-                ご利用ありがとうございました。</p>
-        </section>
-        <section>
+        <!-- エクスポート -->
+        <div class="popup popup_question" id="export_popup">
+            <section>
+                <p>エクスポートしますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button>戻る</button>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
+
+        <div class="popup popup_message" id="export_success_popup">
+            <p>エクスポートが成功しました。</p>
             <i class="fas fa-times"></i>
-        </section>
-    </div>
+        </div>
 
-    <!-- インポート -->
-    <div class="popup popup_question" id="import_popup">
-        <section>
-            <p>インポートしますか？</p>
-            <div>
-                <button>OK</button>
-                <button>戻る</button>
-            </div>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
+        <!-- 在庫検索失敗 -->
+        <div class="popup" id="search_stock_fail_popup">
+            <section>
+                <p>
+                    大変申し訳ありません。在庫品がありませんでした。<br />
+                    当社のDEVICE事業で見積確認させて頂きますので<br />
+                    部品見積依頼をお願いします。
+                </p>
+                <button onclick="location.href='./pages/estimate_parts.html'">部品見積依頼へ　<i
+                        class="far fa-envelope"></i></button>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
 
-    <div class="popup popup_message" id="import_success_popup">
-        <p>インポートが成功しました。</p>
-        <i class="fas fa-times"></i>
-    </div>
+        <!-- ユーザー仮登録完了 -->
+        <div class="popup popup_register" id="buyer_registration_success_popup">
+            <section>
+                <p>バイヤーユーザー仮登録完了</p>
+                <p>
+                    バイヤーユーザー登録情報が送信されました。<br />
+                    審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
+                    メールに記載されているURLをクリックして、本登録を完了させてください。
+                </p>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
 
-    <!-- エクスポート -->
-    <div class="popup popup_question" id="export_popup">
-        <section>
-            <p>エクスポートしますか？</p>
-            <div>
-                <button>OK</button>
-                <button>戻る</button>
-            </div>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
+        <div class="popup popup_register" id="supplier_registration_success_popup">
+            <section>
+                <p>サプライヤーユーザー仮登録完了</p>
+                <p>
+                    サプライヤーユーザー登録情報が送信されました。<br />
+                    審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
+                    メールに記載されているURLをクリックして、本登録を完了させてください。
+                </p>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
 
-    <div class="popup popup_message" id="export_success_popup">
-        <p>エクスポートが成功しました。</p>
-        <i class="fas fa-times"></i>
-    </div>
-
-    <!-- 在庫検索失敗 -->
-    <div class="popup" id="search_stock_fail_popup">
-        <section>
-            <p>
-                大変申し訳ありません。在庫品がありませんでした。<br />
-                当社のDEVICE事業で見積確認させて頂きますので<br />
-                部品見積依頼をお願いします。
-            </p>
-            <button onclick="location.href='./pages/estimate_parts.html'">部品見積依頼へ　<i
-                    class="far fa-envelope"></i></button>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
-
-    <!-- ユーザー仮登録完了 -->
-    <div class="popup popup_register" id="buyer_registration_success_popup">
-        <section>
-            <p>バイヤーユーザー仮登録完了</p>
-            <p>
-                バイヤーユーザー登録情報が送信されました。<br />
-                審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
-                メールに記載されているURLをクリックして、本登録を完了させてください。
-            </p>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
-
-    <div class="popup popup_register" id="supplier_registration_success_popup">
-        <section>
-            <p>サプライヤーユーザー仮登録完了</p>
-            <p>
-                サプライヤーユーザー登録情報が送信されました。<br />
-                審査を通過次第、メールアドレスに承認アドレスをお送りいたします。<br />
-                メールに記載されているURLをクリックして、本登録を完了させてください。
-            </p>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
-
-    <!-- 退会 -->
-    <div class="popup popup_register" id="withdraw_success_popup">
-        <section>
-            <p>アカウントの退会手続きが完了しました。<br />
-                これまでご利用ありがとうございました。</p>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
-    <!-- 退会確認 -->
-    <div class="popup popup_question" id="withdraw_popup">
-        <section>
-            <p>退会しますか？</p>
-            <div>
-                <button>OK</button>
-                <button>戻る</button>
-            </div>
-        </section>
-    </div>
-    <!-- 電子部品・半導体在庫登録済み -->
-    <div class="popup" id="update_stock_success_popup">
-        <section>
-            <p>電子部品・半導体在庫登録更新済みとなります。</p>
-        </section>
-        <section>
-            <i class="fas fa-times"></i>
-        </section>
-    </div>
-    <!-- 削除確認 -->
-    <div class="popup popup_question" id="delete_popup">
-        <section>
-            <p>削除しますか？</p>
-            <div>
-                <button>OK</button>
-                <button>戻る</button>
-            </div>
-        </section>
+        <!-- 退会 -->
+        <div class="popup popup_register" id="withdraw_success_popup">
+            <section>
+                <p>アカウントの退会手続きが完了しました。<br />
+                    これまでご利用ありがとうございました。</p>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
+        <!-- 退会確認 -->
+        <div class="popup popup_question" id="withdraw_popup">
+            <section>
+                <p>退会しますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button>戻る</button>
+                </div>
+            </section>
+        </div>
+        <!-- 電子部品・半導体在庫登録済み -->
+        <div class="popup" id="update_stock_success_popup">
+            <section>
+                <p>電子部品・半導体在庫登録更新済みとなります。</p>
+            </section>
+            <section>
+                <i class="fas fa-times"></i>
+            </section>
+        </div>
+        <!-- 削除確認 -->
+        <div class="popup popup_question" id="delete_popup">
+            <section>
+                <p>削除しますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button>戻る</button>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 
