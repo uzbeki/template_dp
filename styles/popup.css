@@ -5,3 +5,126 @@
 #logout:active + #logout_popup{
 display: none;
 }
+
+/********** popUp **********/
+.popup {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #2300ff;
+	border-radius: var(--border-radius);
+	padding: 15px;
+}
+
+.popup section:first-of-type {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.popup button {
+	color: white;
+	background-color: var(--primary-color);
+	border-radius: var(--border-radius);
+	border: none;
+}
+
+.popup i {
+	padding-right: 10px;
+	font-size: 24px;
+}
+
+.popup_question section:first-of-type,
+#search_stock_fail_popup section:first-of-type {
+	gap: 20px;
+}
+
+/* logout, import, export */
+.popup_question {
+	width: 500px;
+	height: 150px;
+	font-size: 24px;
+}
+
+.popup_question div {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.popup_question button {
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.popup_question button:last-of-type {
+	background-color: white;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.popup_message {
+	width: 800px;
+	height: 50px;
+	font-size: 32px;
+	align-items: center;
+	text-align: center;
+}
+
+.popup_message p {
+	width: 100%;
+}
+
+/********** logout_success **********/
+#logout_success_popup {
+	width: 1100px;
+	height: 200px;
+	font-size: 24px;
+}
+/********** registration **********/
+.popup_register {
+	width: 1000px;
+	height: 300px;
+}
+
+.popup_register section {
+	gap: 20px;
+}
+
+.popup_register p:first-of-type {
+	font-size: 32px;
+}
+
+.popup_register p:last-of-type {
+	font-size: 24px;
+}
+
+/********** search_stock **********/
+#search_stock_fail_popup {
+	width: 600px;
+	height: 200px;
+}
+
+#search_stock_fail_popup button {
+	width: 200px;
+	height: 50px;
+}
+
+#search_stock_fail_popup button i {
+	font-size: 16px;
+}
+
+/********** withdraw **********/
+#withdraw_success_popup {
+	font-size: 24px;
+	height: 100px;
+}
+
+/********** update_stock_success **********/
+#update_stock_success_popup {
+	width: 400px;
+}
