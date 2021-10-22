@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/all.css" />
-    <link rel="stylesheet" href="../styles/common.css" />
-    <link rel="stylesheet" href="../styles/import.css" />
-    <script src="../js/dropdown.js" defer></script>
-    <title>import</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/all.css" />
+		<link rel="stylesheet" href="../styles/common.css" />
+		<link rel="stylesheet" href="../styles/import.css" />
+		<script src="../js/dropdown.js" defer></script>
+		<title>import</title>
+	</head>
 
-  <body>
-    <main>
-      <div class="titel-bg">
-        <h1>インポート</h1>
-      </div>
-      <form class="entry_form">
-        <div class="form_box">
-          <section>
-            <i class="far fa-folder-open"></i>
-            <p>
-              インポートしたいファイルをこのボックスに<br />
-              ドラッグ&ドロップして下さい
-            </p>
-          </section>
-          <button class="button">
-            ファイルをインポート　<i class="fas fa-file-upload"></i>
-          </button>
-        </div>
-      </form>
-    </main>
-  </body>
+	<body>
+		<main>
+			<div class="titel-bg">
+				<h1>インポート</h1>
+			</div>
+
+			<section>
+				<form class="import_form">
+					<input type="file" name="import_file" id="import_file" hidden accept=".csv"/>
+					<div class="form_box">
+						<!-- <i class="far fa-folder-open"></i> -->
+						<i class="fas fa-cloud-upload-alt"></i>
+						<!-- <p>インポートしたいファイルをこのボックスにドラッグ&ドロップして下さい</p> -->
+						<p>こちらをクリックか、ドラッグ＆ドロップで　インポートファイルを選択してください。</p>
+					</div>
+					<!-- <button class="button">ファイルをインポート　<i class="fas fa-file-upload"></i></button> -->
+					<button class="button disabled" disabled>ファイルをインポート<i class="fas fa-arrow-right"></i></button>
+				</form>
+			</section>
+		</main>
+
+		<script>
+			const form = document.querySelector("form.import_form"), 
+      form_box = document.querySelector(".form_box"),
+      fileInput = document.querySelector("input#import_file"),
+      button = document.querySelector("button.button"),
+      fileName = document.querySelector("div.form_box p");
+
+
+      form_box.onclick = e => fileInput.click();
+
+      fileInput.onchange = e => {
+        console.log(fileInput.files);
+        const file = fileInput.files[0];
+        if (file) {
+          fileName.textContent = file.name;
+          button.removeAttribute("disabled");
+          button.classList.remove("disabled");
+        } else {
+          fileName.textContent = "ファイルを選択してください";
+          button.setAttribute("disabled", '');
+          button.classList.add("disabled");
+        }
+      };
+
+		</script>
+	</body>
 </html>

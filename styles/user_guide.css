@@ -1,25 +1,25 @@
 #user-guide-content {
   margin: 0 10%;
 }
-div {
+#user-guide-content div {
   display: flex;
 }
 
-ol {
+#user-guide-content ol {
   font-size: 24px;
 }
 
-li {
+#user-guide-content li {
   margin-top: 30px;
   text-align: left;
 }
 
-p {
+#user-guide-content p {
   color: black;
   font-size: 16px;
 }
 
-p:first-of-type {
+#user-guide-content p:first-of-type {
   font-weight: bold;
   font-size: 24px;
 }
