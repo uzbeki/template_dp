@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="./styles/all.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/popup.css">
+    <script src="./js/popup.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="popup-triggers">
-        <button id="logout">ログアウト</button>
-        <button id="logout-success">ログアウト済み</button>
-        <button id="import">インポート</button>
-        <button id="import-success">インポート済み</button>
-        <button id="export">エクスポート</button>
-        <button id="export-success">エクスポート済み</button>
-        <button>在庫なかった</button>
-        <button >バイヤーユーザー仮登録完了</button>
-        <button>サプライヤーユーザー仮登録完了</button>
-        <button id="withdraw">退会</button>
-        <button>退会済み</button>
-        <button>電子部品・半導体在庫登録更新済み</button>
-        <button>削除</button>
+        <button id="logout" onclick="displayPopup(0)">ログアウト</button>
+        <button id="logout-success" onclick="displayPopup(1)">ログアウト済み</button>
+        <button id="import" onclick="displayPopup(2)">インポート</button>
+        <button id="import-success" onclick="displayPopup(3)">インポート済み</button>
+        <button id="export" onclick="displayPopup(4)">エクスポート</button>
+        <button id="export-success" onclick="displayPopup(5)">エクスポート済み</button>
+        <button id="search-stock-fail" onclick="displayPopup(6)">在庫なかった</button>
+        <button id="buyer-registration-success" onclick="displayPopup(7)">バイヤーユーザー仮登録完了</button>
+        <button id="supplier-registration-success" onclick="displayPopup(8)">サプライヤーユーザー仮登録完了</button>
+        <button id="withdraw-success" onclick="displayPopup(9)">退会済み</button>
+        <button id="withdraw" onclick="displayPopup(10)">退会</button>
+        <button id="update-stock-success" onclick="displayPopup(11)">電子部品・半導体在庫登録更新済み</button>
+        <button id="delete" onclick="displayPopup(12)">削除</button>
 
     </div>
 
@@ -151,7 +152,7 @@
         </section>
     </div>
     <!-- 退会確認 -->
-    <div class="popup popup_question" id="logout_popup">
+    <div class="popup popup_question" id="withdraw_popup">
         <section>
             <p>退会しますか？</p>
             <div>
@@ -170,7 +171,7 @@
         </section>
     </div>
     <!-- 削除確認 -->
-    <div class="popup popup_question" id="logout_popup">
+    <div class="popup popup_question" id="delete_popup">
         <section>
             <p>削除しますか？</p>
             <div>
@@ -179,7 +180,6 @@
             </div>
         </section>
     </div>
-
 </body>
 
 </html>
