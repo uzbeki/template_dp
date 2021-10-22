@@ -1,9 +1,14 @@
+const logoutBtn = document.getElementById("logout");
 
-function displayPopup(popupMsg) {
-    const msg = popupMsg;
-    document.getElementById(msg).style.display = "flex";
-    // backgroundChange;
+
+logoutBtn.onclick = () => {
+    document.getElementsById(popupName).classList.toggle('show');
 }
-function backgroundChange() {
-    documents.getElementById("popup-bg").classList.add("popup-bg-dark");
+const popupId = popupName;
+
+
+function displayPopup(popupName) {
+    document.getElementById(popupName).classList.toggle('show');
+    // document.body.classList.toggle('show');
+
 }

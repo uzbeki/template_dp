@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js" defer></script>
     <title>Document</title>
 </head>
-<body class="alert">
-    
+<body>
 
+    <button class="toggle_popup">Open Popup</button>
+        <div class="popup popup_question" id="import_popup">
+            <section>
+                <p>インポートしますか？</p>
+                <div>
+                    <button>OK</button>
+                    <button class="returnBtn">戻る</button>
+                </div>
+            </section>
+            <section>
+                <button class="clear">
+                    <i class="fas fa-times">x</i>
+                </button> 
+            </section>
+        </div>
 
 
 </body>

@@ -6,29 +6,20 @@
   display: none;
 }
 
-#logout_popup,
-#logout_success_popup,
-#import_popup,
-#import_success_popup,
-#export_popup,
-#export_success_popup,
-#search_stock_fail_popup,
-#buyer_registration_success_popup,
-#supplier_registration_success_popup,
-#withdraw_success_popup,
-#withdraw_popup,
-#update_stock_success_popup,
-#delete_popup {
-  display: none;
-}
-
 /********** popUp **********/
 .popup {
-  display: flex;
   justify-content: space-between;
   border: 1px solid #2300ff;
   border-radius: var(--border-radius);
   padding: 15px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+  opacity: 0;
+  /* transition: all 0.5s ease-out; */
+  background-color: #fff;
 }
 
 .popup section:first-of-type {
@@ -145,12 +136,19 @@
   width: 400px;
 }
 
-.popup-bg-dark {
+body .popup.show {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  background-color: #fff;
+}
+
+.popup-triggers *{
+    z-index: 100;
+}
+
+.popup *{
+    z-index: 0;
 }
