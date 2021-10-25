@@ -1,4 +1,6 @@
-const returnBtn = document.querySelectorAll('.returnBtn');
+const returnBtn = document.querySelector('.returnBtn');
+// 全ての要素を持ってくる
+console.log(returnBtn);
 const closeBtn = document.querySelectorAll('.fa-times');
 
 const displayPopup = popupId => {
@@ -18,11 +20,15 @@ document.onkeyup = e => {
         document.querySelector(".show").classList.remove("show")
     }
 }
-
+// 戻るボタン押下
 returnBtn.onclick = () => {
+    console.log("ここまで");
+    console.log(returnBtn);
+    // document.body.classList.remove('show');
     document.querySelector(".show").classList.remove("show")
 }
 
 closeBtn.onclick = () => {
+    console.log("as");
     document.querySelector(".show").classList.remove("show")
 }
