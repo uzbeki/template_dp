@@ -1,8 +1,7 @@
-const returnBtn = document.querySelector('.returnBtn');
-// 全ての要素を持ってくる
-console.log(returnBtn);
-const closeBtn = document.querySelectorAll('.fa-times');
+const returnBtns = document.querySelectorAll('.returnBtn');
+const closeBtns = document.querySelectorAll('.closeBtn');
 
+const removeShowClass = () => document.querySelector(".show").classList.remove("show")
 const displayPopup = popupId => {
     //表示中のPPを消す
     document.querySelectorAll(".show").forEach(current_popup => {
@@ -16,19 +15,17 @@ const displayPopup = popupId => {
 
 
 document.onkeyup = e => {
-    if (e.key === "Escape") {
-        document.querySelector(".show").classList.remove("show")
-    }
-}
-// 戻るボタン押下
-returnBtn.onclick = () => {
-    console.log("ここまで");
-    console.log(returnBtn);
-    // document.body.classList.remove('show');
-    document.querySelector(".show").classList.remove("show")
+    if (e.key === "Escape") removeShowClass()
 }
 
-closeBtn.onclick = () => {
-    console.log("as");
-    document.querySelector(".show").classList.remove("show")
-}
+returnBtns.forEach(returnButton => {
+    returnButton.onclick = removeShowClass
+    
+})
+
+closeBtns.onclick = removeShowClass 
+closeBtns.forEach(closeButton => {
+    closeButton.onclick = removeShowClass
+    
+})
+
