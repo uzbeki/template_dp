@@ -29,13 +29,10 @@ body {
   overflow: hidden;
 }
 table {
+  table-layout: fixed;
   width: 90%;
 }
-th,
-td {
-  font-size: 1.5rem;
-  padding: 5px 8px;
-}
+
 #update-stock-table tr:nth-child(2n) {
   background-color: #ffffff;
   color: #000000;
@@ -95,11 +92,33 @@ a {
 }
 input {
   border: none;
-  font-size: 1.6rem; 
+  font-size: 1.2rem;
   background-color: #00000000;
-  width: 90%;
-  padding: 2px 15px;
+  width: 100%;
+  padding: 2px 0;
 }
 .num-input {
   text-align: right;
+}
+.data-number,
+.delete-th {
+  width: 4%;
+}
+.num-data-th,
+.dc-data-th,
+.packing-th,
+.dc-th {
+  width: 7%;
+}
+.rohs-th {
+  width: 7%;
+}
+.model-th {
+  width: 10%;
+}
+input[type=checkbox] {
+  width: 100%;
+  margin: 0;
+  transform: scale(1.3);
+  padding: 0;
 }
