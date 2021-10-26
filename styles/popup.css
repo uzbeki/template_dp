@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.popup-triggers{
+.popup-triggers {
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
@@ -19,9 +19,9 @@
   background: white;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   max-width: fit-content;
-
+  border: solid 1px #2300ff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,4 +32,36 @@
   opacity: 1;
   visibility: visible;
 }
+.fa-times {
+  color: #2300ff;
+  font-weight: thin;
+}
 
+.returnBtn {
+  color: #2300ff;
+  background-color: #ffffff;
+  border: solid 1px #2300ff;
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+}
+.okBtn {
+  color: #ffffff;
+  background-color: #2300ff;
+  border: none;
+  width: 50px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.btn-part {
+  margin-top: 10px;
+}
+.estimateBtn {
+  color: #ffffff;
+  background-color: #2300ff;
+  border: none;
+  width: 180px;
+  height: 25px;
+  border-radius: 3px;
+}
