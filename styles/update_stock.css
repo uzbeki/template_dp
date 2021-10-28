@@ -4,10 +4,12 @@ body {
 }
 .table-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   margin-top: 20px;
   align-items: center;
+  font-size: 1.3em;
+  margin: 25px 5%;
 }
 .sort-titel {
   text-align: left;
@@ -51,6 +53,7 @@ table {
   color: #2300ff;
 }
 #update-button {
+  font-size: 1.2em;
   margin-top: 20px;
   width: 900px;
   height: 45px;
@@ -70,6 +73,7 @@ table {
   margin: 10px 5%;
 }
 #add-btn {
+  font-size: 1.2em;
   border: solid 1px #2300ff;
   color: #2300ff;
   padding: 2px 15px;
@@ -116,7 +120,7 @@ input {
 .model-th {
   width: 10%;
 }
-input[type=checkbox] {
+input[type="checkbox"] {
   width: 100%;
   margin: 0;
   transform: scale(1.3);

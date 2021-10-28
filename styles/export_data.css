@@ -4,10 +4,12 @@ body {
 }
 .table-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   margin-top: 20px;
   align-items: center;
+  font-size: 1.3em;
+  margin: 25px 5%;
 }
 .sort-titel {
   text-align: left;
